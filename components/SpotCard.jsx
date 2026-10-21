@@ -27,3 +27,23 @@ export function CandidateCard({ rank, spot, percent, reasons, onSelect }) {
     </button>
   );
 }
+
+/** 近くのスポットのカード（番号は地図のピンと対応） */
+export function NearbyCard({ index, spot, distanceKm }) {
+  return (
+    <div className="rounded-xl border border-line bg-surface p-4">
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="font-bold">
+          <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-white">
+            {index}
+          </span>
+          {spot.name}
+        </span>
+        <span className="shrink-0 text-sm font-medium text-accent">
+          約 {distanceKm.toFixed(1)} km
+        </span>
+      </div>
+      <p className="mt-1 text-sm text-muted">{spot.summary}</p>
+    </div>
+  );
+}
