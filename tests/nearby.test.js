@@ -49,3 +49,27 @@ describe("近くのスポット", () => {
     ).toBe("a");
   });
 });
+
+describe("実データでの近くのスポット", async () => {
+  const spots = (await import("@/data/spots.json")).default;
+  const byId = new Map(spots.map((s) => [s.id, s]));
+
+  it("鶴岡八幡宮のいちばん近くは小町通り（1 km 未満）", () => {
+    const [first] = findNearby(byId.get("tsurugaoka"), spots);
+    expect(first.spot.id).toBe("komachi");
+    expect(first.distanceKm).toBeLessThan(1);
+  });
+
+  it("横浜赤レンガ倉庫の近く 2 件はカップヌードルミュージアムと中華街", () => {
+    const ids = findNearby(byId.get("akarenga"), spots).map((n) => n.spot.id);
+    expect(ids.sort()).toEqual(["chinatown", "cupnoodle"]);
+  });
+
+  it("どのスポットでも自分以外の 2 件が返る", () => {
+    for (const s of spots) {
+      const near = findNearby(s, spots);
+      expect(near).toHaveLength(2);
+      expect(near.some((n) => n.spot.id === s.id)).toBe(false);
+    }
+  });
+});

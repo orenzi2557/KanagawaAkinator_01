@@ -1,13 +1,20 @@
 "use client";
 
 import { useMemo } from "react";
+import dynamic from "next/dynamic";
 import { useQuiz, usePhaseRedirect } from "@/components/QuizProvider";
-import { CandidateCard } from "@/components/SpotCard";
+import { CandidateCard, NearbyCard } from "@/components/SpotCard";
 import { TagBadges } from "@/components/TagBadges";
 import { ReasonText } from "@/components/ReasonText";
 import { GENRE_LABELS } from "@/lib/engine/constants";
 import { descriptions, questions, spots } from "@/lib/data";
 import { buildResult } from "@/lib/result";
+
+// Leaflet は SSR 非対応のため、ブラウザでだけ読み込む
+const SpotMap = dynamic(() => import("@/components/SpotMap"), {
+  ssr: false,
+  loading: () => <div className="h-72 w-full animate-pulse rounded-xl bg-line sm:h-80" />,
+});
 
 export default function ResultPage() {
   const ready = usePhaseRedirect();
@@ -18,7 +25,7 @@ export default function ResultPage() {
   );
   if (!ready) return null;
 
-  const { main, others, summary } = result;
+  const { main, others, nearby, summary } = result;
   const spot = main.spot;
   const select = (spotId) => {
     dispatch({ type: "SELECT_SPOT", spotId });
@@ -59,6 +66,16 @@ export default function ResultPage() {
               aiEnabled={ai.ollama}
             />
           </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-lg font-bold">地図と近くのスポット</h2>
+        <SpotMap main={spot} nearby={nearby} />
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+          {nearby.map((n, i) => (
+            <NearbyCard key={n.spot.id} index={i + 1} spot={n.spot} distanceKm={n.distanceKm} />
+          ))}
         </div>
       </section>
 
