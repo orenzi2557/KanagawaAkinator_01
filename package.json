@@ -13,9 +13,11 @@
     "validate:data": "node scripts/validate-data.js",
     "generate:descriptions": "node --env-file-if-exists=.env.local scripts/generate-descriptions.js",
     "bench:llm": "node --env-file-if-exists=.env.local scripts/bench-llm.js",
-    "simulate": "node scripts/simulate.js"
+    "simulate": "node scripts/simulate.js",
+    "feedback:summary": "node --env-file-if-exists=.env.local scripts/feedback-summary.js"
   },
   "dependencies": {
+    "better-sqlite3": "^13.0.3",
     "leaflet": "^1.9.4",
     "next": "16.4.2",
     "react": "19.3.0",
@@ -32,5 +34,9 @@
     "tailwindcss": "^4",
     "vitest": "^5.0.5"
   },
-  "type": "module"
+  "type": "module",
+  "allowScripts": {
+    "better-sqlite3": false,
+    "unrs-resolver": false
+  }
 }
