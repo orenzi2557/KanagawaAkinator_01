@@ -1,0 +1,111 @@
+[
+  {
+    "id": "r_companion",
+    "tier": "required",
+    "text": "誰と行く予定？",
+    "options": [
+      { "label": "ひとり", "effect": { "relax": 1, "history": 1 } },
+      { "label": "友達", "effect": { "active": 1, "food": 1 } },
+      { "label": "恋人", "effect": { "nature": 1, "sea": 1 } },
+      { "label": "家族・子ども", "effect": { "family": 2, "indoor": 1 } }
+    ]
+  },
+  {
+    "id": "r_budget",
+    "tier": "required",
+    "text": "予算はどれくらい？",
+    "options": [
+      { "label": "なるべくお金をかけずに", "budget": 1, "effect": {} },
+      { "label": "ふつうくらい", "budget": 2, "effect": {} },
+      { "label": "少し贅沢してもいい", "budget": 3, "effect": {} },
+      { "label": "特に決めていない", "effect": {} }
+    ]
+  },
+  {
+    "id": "r_style",
+    "tier": "required",
+    "text": "どんなふうに過ごしたい？",
+    "options": [
+      { "label": "思いきり体を動かしたい", "effect": { "active": 2 } },
+      { "label": "街歩きや食べ歩きをしたい", "effect": { "food": 2, "active": 1 } },
+      { "label": "景色を見ながらのんびりしたい", "effect": { "nature": 1, "relax": 1 } },
+      { "label": "何もせずゆっくり休みたい", "effect": { "relax": 2, "active": -1 } }
+    ]
+  },
+  {
+    "id": "q_history",
+    "tier": "deep",
+    "text": "歴史を感じられる場所に行きたい？",
+    "tag": "history"
+  },
+  {
+    "id": "q_nature",
+    "tier": "deep",
+    "text": "山や湖など、自然の景色を楽しみたい？",
+    "tag": "nature"
+  },
+  { "id": "q_sea", "tier": "deep", "text": "海が見える場所に行きたい？", "tag": "sea" },
+  {
+    "id": "q_food",
+    "tier": "deep",
+    "text": "旅の一番の目的は、おいしいものを食べること？",
+    "tag": "food"
+  },
+  {
+    "id": "q_active",
+    "tier": "deep",
+    "text": "たくさん歩いたり、体を動かしたりしたい？",
+    "tag": "active"
+  },
+  { "id": "q_relax", "tier": "deep", "text": "とにかくゆっくり癒やされたい？", "tag": "relax" },
+  {
+    "id": "q_indoor",
+    "tier": "deep",
+    "text": "雨の日でも楽しめる屋内の場所がいい？",
+    "tag": "indoor"
+  },
+  {
+    "id": "q_family",
+    "tier": "deep",
+    "text": "子どもも一緒に楽しめる場所がいい？",
+    "tag": "family"
+  },
+  { "id": "q_history2", "tier": "deep", "text": "お寺や神社をめぐりたい？", "tag": "history" },
+  {
+    "id": "q_nature2",
+    "tier": "deep",
+    "text": "緑に囲まれた場所で深呼吸したい？",
+    "tag": "nature"
+  },
+  {
+    "id": "q_sea2",
+    "tier": "deep",
+    "text": "波の音を聞いたり、海辺を散歩したりしたい？",
+    "tag": "sea"
+  },
+  { "id": "q_food2", "tier": "deep", "text": "いろいろなお店で食べ歩きをしたい？", "tag": "food" },
+  {
+    "id": "q_active2",
+    "tier": "deep",
+    "text": "アトラクションやアスレチックで遊びたい？",
+    "tag": "active"
+  },
+  {
+    "id": "q_relax2",
+    "tier": "deep",
+    "text": "予定を詰めずに、のんびり過ごしたい？",
+    "tag": "relax"
+  },
+  {
+    "id": "q_indoor2",
+    "tier": "deep",
+    "text": "展示を見たり体験したりできる施設に行きたい？",
+    "tag": "indoor"
+  },
+  {
+    "id": "q_family2",
+    "tier": "deep",
+    "text": "家族みんなでワイワイ楽しめる場所がいい？",
+    "tag": "family"
+  }
+]
