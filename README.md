@@ -12,11 +12,11 @@
 
 ### 1. 必要なもの
 
-| ソフト | バージョン | 備考 |
-|---|---|---|
-| Node.js | 22 以上（24 で動作確認） | https://nodejs.org/ |
-| Git | 任意 | |
-| Ollama | 0.40 以上で動作確認 | https://ollama.com/download 。**なくても動きます**（AI機能オフ） |
+| ソフト  | バージョン               | 備考                                                             |
+| ------- | ------------------------ | ---------------------------------------------------------------- |
+| Node.js | 22 以上（24 で動作確認） | https://nodejs.org/                                              |
+| Git     | 任意                     |                                                                  |
+| Ollama  | 0.40 以上で動作確認      | https://ollama.com/download 。**なくても動きます**（AI機能オフ） |
 
 GPU は不要です（CPU で動きます）。RAM は 16 GB を想定しています。
 
@@ -53,26 +53,26 @@ npm run dev
 
 ## 環境変数（`.env.local`）
 
-| 名前 | 既定値 | 内容 |
-|---|---|---|
-| `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama の URL |
-| `OLLAMA_MODEL` | `gemma3:4b` | 使うモデル |
-| `LLM_TIMEOUT_MS` | `30000` | LLM 1 回あたりのタイムアウト（超えたらフォールバック） |
-| `DATABASE_PATH` | `./data/app.db` | フィードバックを保存する SQLite ファイル（初回起動時に自動作成） |
+| 名前              | 既定値                   | 内容                                                             |
+| ----------------- | ------------------------ | ---------------------------------------------------------------- |
+| `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama の URL                                                    |
+| `OLLAMA_MODEL`    | `gemma3:4b`              | 使うモデル                                                       |
+| `LLM_TIMEOUT_MS`  | `30000`                  | LLM 1 回あたりのタイムアウト（超えたらフォールバック）           |
+| `DATABASE_PATH`   | `./data/app.db`          | フィードバックを保存する SQLite ファイル（初回起動時に自動作成） |
 
 ## コマンド
 
-| コマンド | 内容 |
-|---|---|
-| `npm run dev` | 開発サーバー（http://localhost:3000） |
-| `npm run build` / `npm start` | 本番ビルド / 本番サーバー |
-| `npm test` | テスト（Vitest）。スコア計算・質問選択・終了判定・距離・シミュレーション・API |
-| `npm run validate:data` | `spots.json` / `questions.json` の検証 |
-| `npm run simulate` | シミュレーション結果を表で表示（発表資料用） |
-| `npm run generate:descriptions` | 基本説明を LLM で生成して `data/descriptions.json` に保存（既存はスキップ、`-- --force` で全件） |
-| `npm run bench:llm` | LLM のベンチマーク → `docs/llm-benchmark.md`（`-- --models a,b` でモデル指定） |
-| `npm run feedback:summary` | フィードバックの集計（発表資料用） |
-| `npm run lint` / `npm run format` | ESLint / Prettier |
+| コマンド                          | 内容                                                                                             |
+| --------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `npm run dev`                     | 開発サーバー（http://localhost:3000）                                                            |
+| `npm run build` / `npm start`     | 本番ビルド / 本番サーバー                                                                        |
+| `npm test`                        | テスト（Vitest）。スコア計算・質問選択・終了判定・距離・シミュレーション・API                    |
+| `npm run validate:data`           | `spots.json` / `questions.json` の検証                                                           |
+| `npm run simulate`                | シミュレーション結果を表で表示（発表資料用）                                                     |
+| `npm run generate:descriptions`   | 基本説明を LLM で生成して `data/descriptions.json` に保存（既存はスキップ、`-- --force` で全件） |
+| `npm run bench:llm`               | LLM のベンチマーク → `docs/llm-benchmark.md`（`-- --models a,b` でモデル指定）                   |
+| `npm run feedback:summary`        | フィードバックの集計（発表資料用）                                                               |
+| `npm run lint` / `npm run format` | ESLint / Prettier                                                                                |
 
 ## しくみ
 
@@ -115,12 +115,12 @@ docs/                要件定義書、タグ付けの根拠、出典、ベン�
 
 ## 依存パッケージ（追加した理由）
 
-| パッケージ | 理由 |
-|---|---|
-| `leaflet`, `react-leaflet` | 結果画面の地図（OpenStreetMap タイル） |
-| `better-sqlite3` | フィードバックと回答ログの保存 |
-| `zod` | API の入力と LLM の出力の検証 |
-| `vitest` | テスト |
+| パッケージ                           | 理由                                    |
+| ------------------------------------ | --------------------------------------- |
+| `leaflet`, `react-leaflet`           | 結果画面の地図（OpenStreetMap タイル）  |
+| `better-sqlite3`                     | フィードバックと回答ログの保存          |
+| `zod`                                | API の入力と LLM の出力の検証           |
+| `vitest`                             | テスト                                  |
 | `prettier`, `eslint-config-prettier` | コード整形（ESLint と競合しないように） |
 
 ## うまく動かないとき
