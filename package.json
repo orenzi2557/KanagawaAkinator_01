@@ -11,8 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "validate:data": "node scripts/validate-data.js",
-    "generate:descriptions": "node scripts/generate-descriptions.js",
-    "bench:llm": "node scripts/bench-llm.js",
+    "generate:descriptions": "node --env-file-if-exists=.env.local scripts/generate-descriptions.js",
+    "bench:llm": "node --env-file-if-exists=.env.local scripts/bench-llm.js",
     "simulate": "node scripts/simulate.js"
   },
   "dependencies": {
