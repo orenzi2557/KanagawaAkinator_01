@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "validate:data": "node scripts/validate-data.js",
     "generate:descriptions": "node scripts/generate-descriptions.js",
-    "bench:llm": "node scripts/bench-llm.js"
+    "bench:llm": "node scripts/bench-llm.js",
+    "simulate": "node scripts/simulate.js"
   },
   "dependencies": {
     "next": "16.4.2",
