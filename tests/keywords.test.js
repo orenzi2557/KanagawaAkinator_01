@@ -41,6 +41,7 @@ describe("キーワード辞書", () => {
   it("予算を読み取る", () => {
     expect(parseTextByKeywords("なるべく安く済ませたい").budget).toBe(1);
     expect(parseTextByKeywords("たまには贅沢したい").budget).toBe(3);
+    expect(parseTextByKeywords("温泉でゆっくり。予算は気にしない").budget).toBe(3);
   });
 
   it("空や null でも落ちない", () => {
