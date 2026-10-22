@@ -21,7 +21,8 @@ export default function QuizPage() {
     let analysis = { scores: null, budget: null, source: null };
     if (text) {
       dispatch({ type: "ANALYZE_START" });
-      analysis = await analyzeText(question, text, { aiEnabled: ai.ollama });
+      // 状態確認が終わる前なら、とりあえずサーバーに任せる（Ollama が止まっていればサーバー側で辞書に切り替わる）
+      analysis = await analyzeText(question, text, { aiEnabled: ai.ollama || !ai.checked });
     }
     dispatch({
       type: "SUBMIT_ANSWER",

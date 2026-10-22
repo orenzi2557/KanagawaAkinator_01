@@ -63,6 +63,7 @@ export default function ResultPage() {
               spot={spot}
               reasons={main.reasons}
               summary={summary}
+              aiChecked={ai.checked}
               aiEnabled={ai.ollama}
             />
           </div>
