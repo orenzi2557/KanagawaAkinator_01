@@ -8,7 +8,7 @@ import path from "node:path";
 import { TAGS, TAG_LABELS } from "../lib/engine/constants.js";
 import { chatJson, chatStream, ollamaConfig, unloadModel } from "../lib/llm/ollama.js";
 import { PARSE_SCHEMA, buildParsePrompt, normalizeParseResult } from "../lib/llm/parseText.js";
-import { buildExplainPrompt } from "../lib/llm/explain.js";
+import { EXPLAIN_OPTIONS, buildExplainPrompt, tidyExplanation } from "../lib/llm/explain.js";
 import { parseTextByKeywords } from "../lib/llm/keywords.js";
 
 const root = path.join(import.meta.dirname, "..");
@@ -100,7 +100,9 @@ async function benchModel(model) {
     let text = "";
     try {
       const prompt = buildExplainPrompt(spot, { topTags: c.tags, texts: c.texts }, c.tags);
-      for await (const chunk of chatStream(prompt, config)) {
+      for await (const chunk of tidyExplanation(
+        chatStream({ ...prompt, ...EXPLAIN_OPTIONS }, config),
+      )) {
         first ??= Date.now() - started;
         text += chunk;
       }
@@ -144,7 +146,7 @@ function toMarkdown(results, keywords, version) {
     `- 環境: ${cpu}（${os.cpus().length} スレッド）、RAM ${Math.round(os.totalmem() / 1024 ** 3)} GB、GPU なし`,
     `- Ollama: ${version}`,
     `- 解析: ${PARSE_CASES.length} 件（Ollama の format に JSON スキーマを指定、temperature 0）`,
-    `- 説明文: ${EXPLAIN_CASES.length} 件（ストリーミング、num_predict 220）`,
+    `- 説明文: ${EXPLAIN_CASES.length} 件（ストリーミング、temperature ${EXPLAIN_OPTIONS.temperature}、num_predict ${EXPLAIN_OPTIONS.numPredict}、3 文で打ち切り）`,
     "",
     "## まとめ",
     "",
