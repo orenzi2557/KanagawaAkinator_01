@@ -13,9 +13,12 @@ import {
   buildAnswersSummary,
   buildExplainPrompt,
   streamExplanation,
+  supportedTags,
+  supportedTexts,
   templateReason,
+  tidyExplanation,
 } from "@/lib/llm/explain.js";
-import { checkHealth, ollamaConfig } from "@/lib/llm/ollama.js";
+import { chatStream, checkHealth, ollamaConfig } from "@/lib/llm/ollama.js";
 
 const zeros = Object.fromEntries(TAGS.map((t) => [t, 0]));
 const enoshima = spots.find((s) => s.id === "enoshima");
@@ -82,14 +85,47 @@ describe("説明文", () => {
   });
 
   it("プロンプトには facts だけを事実情報として渡し、営業時間・料金を禁止する", () => {
-    const { system, user } = buildExplainPrompt(enoshima, { topTags: ["sea", "food"], texts: [] }, [
-      "sea",
-    ]);
+    const { system, user } = buildExplainPrompt(enoshima, { topTags: ["sea"], texts: [] }, ["sea"]);
     for (const f of enoshima.facts) expect(user).toContain(f);
-    expect(system).toContain("事実情報にない名物・料理");
-    expect(user).toContain("合っている点: 海");
-    expect(user).not.toContain("グルメ");
+    expect(system).toContain("書かれていない名物・料理");
     expect(system).toContain("営業時間・料金");
+    expect(user).toContain("利用者の希望: 海を感じたい");
+  });
+
+  it("facts で裏付けられない希望は渡さない（江の島の facts には食べ物の記述がない）", () => {
+    const chinatown = spots.find((s) => s.id === "chinatown");
+    expect(supportedTags(enoshima, ["sea", "food"])).toEqual(["sea"]);
+    expect(supportedTags(chinatown, ["food"])).toEqual(["food"]);
+  });
+
+  it("facts で裏付けられない話題を含む自由記述は渡さない", () => {
+    expect(
+      supportedTexts(enoshima, ["海鮮が食べたいけど、あまり歩きたくない", "海が見たい"]),
+    ).toEqual(["海が見たい"]);
+    const { user } = buildExplainPrompt(
+      enoshima,
+      { topTags: ["sea", "food"], texts: ["海鮮が食べたい"] },
+      ["sea", "food"],
+    );
+    expect(user).not.toContain("おいしいもの");
+    expect(user).not.toContain("海鮮");
+  });
+
+  it("説明文は改行・マークダウンを除き、3 文で打ち切って元の生成も止める", async () => {
+    let closed = false;
+    async function* source() {
+      try {
+        yield "\n 一文目です。**二**文目";
+        yield "です。\n三文目です。四文目";
+        yield "です。";
+      } finally {
+        closed = true;
+      }
+    }
+    let out = "";
+    for await (const chunk of tidyExplanation(source())) out += chunk;
+    expect(out).toBe("一文目です。二文目です。三文目です。");
+    expect(closed).toBe(true);
   });
 
   it("テンプレート文はハッシュタグ付き", () => {
@@ -109,6 +145,21 @@ describe("説明文", () => {
     });
     expect(r.source).toBe("llm");
     expect(await readAll(r.stream)).toBe("江の島は海が好きなあなたにぴったりです。");
+  });
+
+  it("利用者が画面を離れて中断されたときは、失敗として記録しない", async () => {
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    const controller = new AbortController();
+    controller.abort();
+    async function* chatStream() {
+      throw new DOMException("aborted", "AbortError");
+    }
+    const r = await streamExplanation(enoshima, { topTags: [], texts: [] }, [], {
+      chatStream,
+      signal: controller.signal,
+    });
+    expect(r.source).toBe("template");
+    expect(warn).not.toHaveBeenCalled();
   });
 
   it("最初の断片が来なければテンプレート文", async () => {
@@ -131,6 +182,62 @@ describe("説明文", () => {
     }
     const r = await streamExplanation(enoshima, { topTags: [], texts: [] }, [], { chatStream });
     expect(await readAll(r.stream)).toBe("途中まで");
+  });
+});
+
+describe("Ollama のストリーミング", () => {
+  /** NDJSON の断片を delays[i] ミリ秒ごとに返す偽の Ollama 応答 */
+  function slowOllama(parts, delays, onAbort) {
+    return vi.fn(async (_url, { signal }) => {
+      signal.addEventListener("abort", () => onAbort?.());
+      const encoder = new TextEncoder();
+      const body = new ReadableStream({
+        async pull(controller) {
+          const i = body.index ?? 0;
+          body.index = i + 1;
+          if (i >= parts.length) return controller.close();
+          await new Promise((r) => setTimeout(r, delays[i]));
+          if (signal.aborted) return controller.error(signal.reason);
+          const done = i === parts.length - 1;
+          controller.enqueue(
+            encoder.encode(JSON.stringify({ message: { content: parts[i] }, done }) + "\n"),
+          );
+        },
+      });
+      return new Response(body);
+    });
+  }
+  const config = { ...ollamaConfig({}), timeoutMs: 100 };
+  const collect = async (gen) => {
+    let s = "";
+    for await (const c of gen) s += c;
+    return s;
+  };
+
+  it("タイムアウトは最初の断片までにかかり、生成全体が長くても途中で切れない", async () => {
+    // 1 断片 60ms × 5 = 300ms（timeoutMs 100ms より長い）
+    vi.stubGlobal("fetch", slowOllama(["あ", "い", "う", "え", "お"], [60, 60, 60, 60, 60]));
+    expect(await collect(chatStream({ system: "s", user: "u" }, config))).toBe("あいうえお");
+  });
+
+  it("最初の断片が timeoutMs 以内に来なければ TimeoutError", async () => {
+    vi.stubGlobal("fetch", slowOllama(["あ"], [300]));
+    await expect(collect(chatStream({ system: "s", user: "u" }, config))).rejects.toMatchObject({
+      name: "TimeoutError",
+    });
+  });
+
+  it("途中で読むのをやめたら Ollama への接続を切る", async () => {
+    let aborted = false;
+    vi.stubGlobal(
+      "fetch",
+      slowOllama(["あ", "い", "う"], [10, 10, 10], () => (aborted = true)),
+    );
+    for await (const chunk of chatStream({ system: "s", user: "u" }, config)) {
+      expect(chunk).toBe("あ");
+      break;
+    }
+    expect(aborted).toBe(true);
   });
 });
 

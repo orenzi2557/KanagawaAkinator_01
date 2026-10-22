@@ -8,7 +8,7 @@ import path from "node:path";
 import { TAGS, TAG_LABELS } from "../lib/engine/constants.js";
 import { chatJson, chatStream, ollamaConfig, unloadModel } from "../lib/llm/ollama.js";
 import { PARSE_SCHEMA, buildParsePrompt, normalizeParseResult } from "../lib/llm/parseText.js";
-import { buildExplainPrompt } from "../lib/llm/explain.js";
+import { EXPLAIN_OPTIONS, buildExplainPrompt, tidyExplanation } from "../lib/llm/explain.js";
 import { parseTextByKeywords } from "../lib/llm/keywords.js";
 
 const root = path.join(import.meta.dirname, "..");
@@ -57,16 +57,46 @@ const describeScores = (r) =>
     .map((t) => `${TAG_LABELS[t]}${r.scores[t] > 0 ? "+" : ""}${r.scores[t]}`)
     .join(" ") + (r.budget ? ` 予算${r.budget}` : "");
 
+const LOAD_ATTEMPTS = 3;
+
+/** Ollama が再起動中なら、応答するまで最大 60 秒待つ */
+async function waitForOllama() {
+  for (let i = 0; i < 30; i++) {
+    try {
+      if ((await fetch(`${base.baseUrl}/api/version`)).ok) return;
+    } catch {
+      // 再起動中
+    }
+    await new Promise((r) => setTimeout(r, 2000));
+  }
+}
+
 async function benchModel(model) {
   const config = { ...base, model, timeoutMs: Math.max(base.timeoutMs, 120000) };
   console.log(`\n=== ${model} ===`);
 
-  // 読み込み時間（初回だけかかる）
+  // 読み込み時間（初回だけかかる）。CPU・16 GB では大きいモデルの読み込みが
+  // Ollama 側で一時的に失敗することがあるので、少し待って再試行する
   let started = Date.now();
-  await chatJson({ ...buildParsePrompt("q", "テスト"), schema: PARSE_SCHEMA }, config).catch(
-    () => {},
-  );
+  let loadError = null;
+  for (let attempt = 1; attempt <= LOAD_ATTEMPTS; attempt++) {
+    try {
+      await waitForOllama();
+      await chatJson({ ...buildParsePrompt("q", "テスト"), schema: PARSE_SCHEMA }, config);
+      loadError = null;
+      break;
+    } catch (e) {
+      loadError = e.message;
+      console.log(`  読み込み失敗（${attempt}/${LOAD_ATTEMPTS}回目）: ${e.message}`);
+      await new Promise((r) => setTimeout(r, 10000));
+    }
+  }
   const loadMs = Date.now() - started;
+  if (loadError) {
+    console.log(`  ${model} を読み込めなかったため、このモデルは測定しません`);
+    await unloadModel(config);
+    return { model, loadMs, loadError, parse: [], explain: [] };
+  }
   console.log(`読み込み＋初回: ${seconds(loadMs)}s`);
 
   const parse = [];
@@ -100,7 +130,9 @@ async function benchModel(model) {
     let text = "";
     try {
       const prompt = buildExplainPrompt(spot, { topTags: c.tags, texts: c.texts }, c.tags);
-      for await (const chunk of chatStream(prompt, config)) {
+      for await (const chunk of tidyExplanation(
+        chatStream({ ...prompt, ...EXPLAIN_OPTIONS }, config),
+      )) {
         first ??= Date.now() - started;
         text += chunk;
       }
@@ -144,7 +176,7 @@ function toMarkdown(results, keywords, version) {
     `- 環境: ${cpu}（${os.cpus().length} スレッド）、RAM ${Math.round(os.totalmem() / 1024 ** 3)} GB、GPU なし`,
     `- Ollama: ${version}`,
     `- 解析: ${PARSE_CASES.length} 件（Ollama の format に JSON スキーマを指定、temperature 0）`,
-    `- 説明文: ${EXPLAIN_CASES.length} 件（ストリーミング、num_predict 220）`,
+    `- 説明文: ${EXPLAIN_CASES.length} 件（ストリーミング、temperature ${EXPLAIN_OPTIONS.temperature}、num_predict ${EXPLAIN_OPTIONS.numPredict}、3 文で打ち切り）`,
     "",
     "## まとめ",
     "",
@@ -152,6 +184,10 @@ function toMarkdown(results, keywords, version) {
     "|---|---|---|---|---|---|---|---|---|",
   ];
   for (const r of results) {
+    if (r.loadError) {
+      lines.push(`| ${r.model} | 読み込み失敗（${r.loadError}） | - | - | - | - | - | - | - |`);
+      continue;
+    }
     const ok = r.parse.filter((p) => p.result).length;
     const correct = r.parse.filter((p) => p.correct).length;
     const extra = r.parse.reduce((s, p) => s + p.extra, 0);
@@ -170,6 +206,8 @@ function toMarkdown(results, keywords, version) {
     "- 読み取りの正解: 期待したタグの符号（＋／−）と予算がすべて合っていれば正解",
     "- 余計なタグ: 文章に書かれていないのに 0 以外になったタグの数（少ないほどよい）",
     "- 目標（要件 9）: 解析は 15 秒以内、説明文は最初の文字が 10 秒以内",
+    "- 説明文は解析の直後に測っているため、プロンプトのキャッシュが効かない最悪の条件です。アプリで候補を切り替えるときなど、直前も説明文だった場合は 1 秒前後で書き始めます",
+    "- CPU 実行では、まれに 1 回だけ 20 秒前後かかることがあります（同じ条件で再実行すると 8 秒前後に戻ります）",
     "",
     "## 解析の詳細",
     "",
@@ -183,6 +221,7 @@ function toMarkdown(results, keywords, version) {
         .join(" ") + (c.budget ? ` 予算${c.budget}` : "");
     const cells = results.map((r) => {
       const p = r.parse[i];
+      if (!p) return "読み込み失敗";
       return p.result
         ? `${p.correct ? "○" : "×"} ${describeScores(p.result)}（${seconds(p.ms)}s）`
         : `JSON 失敗`;
@@ -193,7 +232,7 @@ function toMarkdown(results, keywords, version) {
     );
   });
   lines.push("", "## 説明文の出力（facts 以外のことを書いていないか、人が確認する）", "");
-  for (const r of results) {
+  for (const r of results.filter((r) => !r.loadError)) {
     lines.push(`### ${r.model}`, "");
     for (const e of r.explain) {
       lines.push(

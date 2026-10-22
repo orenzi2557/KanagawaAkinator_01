@@ -16,6 +16,9 @@ export async function POST(request) {
   if (!input.success) {
     return Response.json({ error: "入力が不正です", issues: input.error.issues }, { status: 400 });
   }
-  const result = await parseText(input.data.question, input.data.text, { chatJson });
+  const result = await parseText(input.data.question, input.data.text, {
+    chatJson,
+    signal: request.signal,
+  });
   return Response.json(result);
 }

@@ -2,58 +2,49 @@
 
 // 「あなたに合う理由」。AI機能オンなら /api/explain からストリーミングで受け取り、
 // オフ・失敗時はテンプレート文を表示する。
+// AI の状態確認（/api/health）が終わるまでは判断を保留する
+// （結果画面を再読み込みしたときに、確認前の「オフ」のまま固まらないようにするため）。
 
-import { useEffect, useState } from "react";
+import { useCallback, useMemo, useSyncExternalStore } from "react";
 import { templateReason } from "@/lib/llm/explain";
+import {
+  IDLE_SNAPSHOT,
+  explainKey,
+  getExplainSnapshot,
+  subscribeExplain,
+} from "@/lib/explainClient";
 
-export function ReasonText({ spot, reasons, summary, aiEnabled }) {
-  const [text, setText] = useState("");
-  const [status, setStatus] = useState(aiEnabled ? "waiting" : "done");
+function Waiting({ label }) {
+  return (
+    <p className="flex items-center gap-2 text-sm text-muted" role="status">
+      <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+      {label}
+    </p>
+  );
+}
 
-  useEffect(() => {
-    if (!aiEnabled) return;
-    const controller = new AbortController();
-
-    (async () => {
-      try {
-        const res = await fetch("/api/explain", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ spotId: spot.id, answersSummary: summary, reasonTags: reasons }),
-          signal: controller.signal,
-        });
-        if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
-        const reader = res.body.pipeThrough(new TextDecoderStream()).getReader();
-        let received = "";
-        for (;;) {
-          const { value, done } = await reader.read();
-          if (done) break;
-          received += value;
-          setText(received);
-          setStatus("streaming");
-        }
-        if (!received) setText(templateReason(spot, reasons));
-        setStatus("done");
-      } catch {
-        if (controller.signal.aborted) return;
-        setText(templateReason(spot, reasons));
-        setStatus("done");
-      }
-    })();
-
-    return () => controller.abort();
-    // spot が変わったら親が key で作り直すので、ここでは初回だけ実行する
+function StreamedReason({ spot, reasons, summary }) {
+  const key = useMemo(() => explainKey(spot.id, summary, reasons), [spot.id, summary, reasons]);
+  const subscribe = useCallback(
+    (listener) => subscribeExplain(key, { spot, summary, reasonTags: reasons }, listener),
+    // key が同じなら同じ説明なので、購読し直さない
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    [key],
+  );
+  const snapshot = useSyncExternalStore(
+    subscribe,
+    () => getExplainSnapshot(key),
+    () => IDLE_SNAPSHOT,
+  );
 
+  if (snapshot.status === "waiting") return <Waiting label="AIが説明文を書いています…" />;
+  return (
+    <p className={snapshot.status === "streaming" ? "typing-caret" : undefined}>{snapshot.text}</p>
+  );
+}
+
+export function ReasonText({ spot, reasons, summary, aiChecked, aiEnabled }) {
+  if (!aiChecked) return <Waiting label="AIの準備を確認しています…" />;
   if (!aiEnabled) return <p>{templateReason(spot, reasons)}</p>;
-  if (status === "waiting") {
-    return (
-      <p className="flex items-center gap-2 text-sm text-muted" role="status">
-        <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-        AIが説明文を書いています…
-      </p>
-    );
-  }
-  return <p className={status === "streaming" ? "typing-caret" : undefined}>{text}</p>;
+  return <StreamedReason spot={spot} reasons={reasons} summary={summary} />;
 }
