@@ -133,7 +133,8 @@ describe("次の質問の選択", () => {
   it("聞いた質問は二度と出さない", () => {
     const answers = [answer("r_companion", 0), answer("r_budget", 0)];
     const seen = new Set(answers.map((a) => a.questionId));
-    for (let i = 0; i < 9; i++) {
+    const remaining = Q.length - answers.length;
+    for (let i = 0; i < remaining; i++) {
       const q = selectNextQuestion(S, Q, answers);
       expect(seen.has(q.id)).toBe(false);
       seen.add(q.id);
