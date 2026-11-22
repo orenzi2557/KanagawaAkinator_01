@@ -98,6 +98,10 @@ export const sampleQuestions = [
   { id: "q_indoor", tier: "deep", text: "屋内？", tag: "indoor" },
   { id: "q_family", tier: "deep", text: "家族？", tag: "family" },
   { id: "q_sea2", tier: "deep", text: "海2？", tag: "sea" },
+  { id: "q_art", tier: "deep", text: "アート？", tag: "art" },
+  { id: "q_animal", tier: "deep", text: "生き物？", tag: "animal" },
+  { id: "q_flower", tier: "deep", text: "花？", tag: "flower" },
+  { id: "q_night", tier: "deep", text: "夜景？", tag: "night" },
 ];
 
 export const answer = (questionId, choice, extra = {}) => ({

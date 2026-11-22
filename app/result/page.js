@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import dynamic from "next/dynamic";
 import { useQuiz, usePhaseRedirect } from "@/components/QuizProvider";
-import { CandidateCard, NearbyCard } from "@/components/SpotCard";
+import { AreaSpotCard, CandidateCard, NearbyCard } from "@/components/SpotCard";
 import { TagBadges } from "@/components/TagBadges";
 import { ReasonText } from "@/components/ReasonText";
 import { GENRE_LABELS } from "@/lib/engine/constants";
@@ -25,7 +25,7 @@ export default function ResultPage() {
   );
   if (!ready) return null;
 
-  const { main, others, nearby, summary } = result;
+  const { main, others, nearby, area, summary } = result;
   const spot = main.spot;
   const select = (spotId) => {
     dispatch({ type: "SELECT_SPOT", spotId });
@@ -79,6 +79,22 @@ export default function ResultPage() {
           ))}
         </div>
       </section>
+
+      {area && area.spots.length > 0 && (
+        <section>
+          <h2 className="text-lg font-bold">
+            おすすめエリア：<span className="text-primary-strong">{area.label}</span>
+          </h2>
+          <p className="mb-3 mt-1 text-sm text-muted">
+            {spot.name}と同じエリアで、あなたの好みに合うスポットです。
+          </p>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {area.spots.map((a) => (
+              <AreaSpotCard key={a.spot.id} spot={a.spot} percent={a.percent} reasons={a.reasons} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <section>
         <h2 className="mb-3 text-lg font-bold">ほかの候補</h2>

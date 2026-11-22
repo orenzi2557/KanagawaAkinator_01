@@ -44,7 +44,12 @@
     "text": "山や湖など、自然の景色を楽しみたい？",
     "tag": "nature"
   },
-  { "id": "q_sea", "tier": "deep", "text": "海が見える場所に行きたい？", "tag": "sea" },
+  {
+    "id": "q_sea",
+    "tier": "deep",
+    "text": "海が見える場所に行きたい？",
+    "tag": "sea"
+  },
   {
     "id": "q_food",
     "tier": "deep",
@@ -57,7 +62,12 @@
     "text": "たくさん歩いたり、体を動かしたりしたい？",
     "tag": "active"
   },
-  { "id": "q_relax", "tier": "deep", "text": "とにかくゆっくり癒やされたい？", "tag": "relax" },
+  {
+    "id": "q_relax",
+    "tier": "deep",
+    "text": "とにかくゆっくり癒やされたい？",
+    "tag": "relax"
+  },
   {
     "id": "q_indoor",
     "tier": "deep",
@@ -70,7 +80,12 @@
     "text": "子どもも一緒に楽しめる場所がいい？",
     "tag": "family"
   },
-  { "id": "q_history2", "tier": "deep", "text": "お寺や神社をめぐりたい？", "tag": "history" },
+  {
+    "id": "q_history2",
+    "tier": "deep",
+    "text": "お寺や神社をめぐりたい？",
+    "tag": "history"
+  },
   {
     "id": "q_nature2",
     "tier": "deep",
@@ -83,7 +98,12 @@
     "text": "波の音を聞いたり、海辺を散歩したりしたい？",
     "tag": "sea"
   },
-  { "id": "q_food2", "tier": "deep", "text": "いろいろなお店で食べ歩きをしたい？", "tag": "food" },
+  {
+    "id": "q_food2",
+    "tier": "deep",
+    "text": "いろいろなお店で食べ歩きをしたい？",
+    "tag": "food"
+  },
   {
     "id": "q_active2",
     "tier": "deep",
@@ -107,5 +127,53 @@
     "tier": "deep",
     "text": "家族みんなでワイワイ楽しめる場所がいい？",
     "tag": "family"
+  },
+  {
+    "id": "q_art",
+    "tier": "deep",
+    "text": "美術館や博物館で、展示をじっくり見たい？",
+    "tag": "art"
+  },
+  {
+    "id": "q_animal",
+    "tier": "deep",
+    "text": "動物や海の生き物に会いたい？",
+    "tag": "animal"
+  },
+  {
+    "id": "q_flower",
+    "tier": "deep",
+    "text": "季節の花や庭園を楽しみたい？",
+    "tag": "flower"
+  },
+  {
+    "id": "q_night",
+    "tier": "deep",
+    "text": "きれいな夜景を見たい？",
+    "tag": "night"
+  },
+  {
+    "id": "q_art2",
+    "tier": "deep",
+    "text": "アート作品や、ものづくりの展示に興味がある？",
+    "tag": "art"
+  },
+  {
+    "id": "q_animal2",
+    "tier": "deep",
+    "text": "動物園や水族館に行きたい？",
+    "tag": "animal"
+  },
+  {
+    "id": "q_flower2",
+    "tier": "deep",
+    "text": "花がたくさん咲いている場所を歩きたい？",
+    "tag": "flower"
+  },
+  {
+    "id": "q_night2",
+    "tier": "deep",
+    "text": "日が暮れてからも楽しめる場所がいい？",
+    "tag": "night"
   }
 ]

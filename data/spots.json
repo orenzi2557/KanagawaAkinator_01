@@ -4,6 +4,7 @@
     "name": "鶴岡八幡宮",
     "genre": "history",
     "area": "鎌倉市",
+    "region": "kamakura",
     "lat": 35.3251836,
     "lng": 139.5561787,
     "budget": 1,
@@ -15,7 +16,11 @@
       "active": 2,
       "relax": 1,
       "indoor": 0,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 1,
+      "night": 0
     },
     "facts": [
       "11世紀後半に源氏の守り神として創建された",
@@ -30,6 +35,7 @@
     "name": "鎌倉大仏（高徳院）",
     "genre": "history",
     "area": "鎌倉市",
+    "region": "kamakura",
     "lat": 35.3164986,
     "lng": 139.5357293,
     "budget": 1,
@@ -41,7 +47,11 @@
       "active": 0,
       "relax": 2,
       "indoor": 0,
-      "family": 2
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "浄土宗の寺院で、本尊は国宝の銅造阿弥陀如来坐像（鎌倉大仏）",
@@ -56,6 +66,7 @@
     "name": "長谷寺",
     "genre": "history",
     "area": "鎌倉市",
+    "region": "kamakura",
     "lat": 35.3122687,
     "lng": 139.5333092,
     "budget": 1,
@@ -67,7 +78,11 @@
       "active": 1,
       "relax": 2,
       "indoor": 1,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 2,
+      "night": 0
     },
     "facts": [
       "本尊は像高9.18メートルの木造十一面観世音菩薩像",
@@ -82,6 +97,7 @@
     "name": "大涌谷",
     "genre": "nature",
     "area": "足柄下郡箱根町",
+    "region": "hakone",
     "lat": 35.2474057,
     "lng": 139.0242051,
     "budget": 2,
@@ -93,7 +109,11 @@
       "active": 3,
       "relax": 0,
       "indoor": 0,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "箱根火山の冠ヶ岳北側斜面にある、活発な噴気地帯",
@@ -108,6 +128,7 @@
     "name": "芦ノ湖",
     "genre": "nature",
     "area": "足柄下郡箱根町",
+    "region": "hakone",
     "lat": 35.214483,
     "lng": 139.0019966,
     "budget": 2,
@@ -119,7 +140,11 @@
       "active": 1,
       "relax": 3,
       "indoor": 0,
-      "family": 2
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "箱根山のカルデラ湖で、神奈川県で最大の湖",
@@ -135,6 +160,7 @@
     "name": "宮ヶ瀬湖",
     "genre": "nature",
     "area": "愛甲郡清川村・愛川町、相模原市緑区",
+    "region": "kenoh",
     "lat": 35.5212818,
     "lng": 139.2356154,
     "budget": 1,
@@ -146,7 +172,11 @@
       "active": 2,
       "relax": 2,
       "indoor": 1,
-      "family": 3
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
     },
     "facts": [
       "宮ヶ瀬ダムの建設によってできたダム湖で、ダムは2000年に完成した",
@@ -162,6 +192,7 @@
     "name": "江の島",
     "genre": "sea",
     "area": "藤沢市",
+    "region": "shonan",
     "lat": 35.3001052,
     "lng": 139.4806371,
     "budget": 2,
@@ -173,7 +204,11 @@
       "active": 2,
       "relax": 1,
       "indoor": 0,
-      "family": 2
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 1,
+      "night": 1
     },
     "facts": [
       "相模湾に浮かぶ、砂州で陸続きになった陸繋島",
@@ -188,6 +223,7 @@
     "name": "由比ヶ浜",
     "genre": "sea",
     "area": "鎌倉市",
+    "region": "kamakura",
     "lat": 35.3091195,
     "lng": 139.5422113,
     "budget": 1,
@@ -199,7 +235,11 @@
       "active": 2,
       "relax": 2,
       "indoor": 0,
-      "family": 3
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "鎌倉市にある、相模湾に面した砂浜海岸",
@@ -214,6 +254,7 @@
     "name": "城ヶ島",
     "genre": "sea",
     "area": "三浦市",
+    "region": "miura",
     "lat": 35.133322,
     "lng": 139.6182534,
     "budget": 1,
@@ -225,7 +266,11 @@
       "active": 2,
       "relax": 1,
       "indoor": 0,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "三浦半島の南端にある、神奈川県最大の自然島（周囲約4km）",
@@ -241,6 +286,7 @@
     "name": "横浜中華街",
     "genre": "gourmet",
     "area": "横浜市中区",
+    "region": "yokohama",
     "lat": 35.4426638,
     "lng": 139.6451907,
     "budget": 2,
@@ -252,7 +298,11 @@
       "active": 1,
       "relax": 0,
       "indoor": 2,
-      "family": 2
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
     },
     "facts": [
       "日本最大かつ東アジア最大の中華街",
@@ -267,6 +317,7 @@
     "name": "横浜赤レンガ倉庫",
     "genre": "gourmet",
     "area": "横浜市中区",
+    "region": "yokohama",
     "lat": 35.4524046,
     "lng": 139.6429182,
     "budget": 2,
@@ -278,7 +329,11 @@
       "active": 0,
       "relax": 1,
       "indoor": 3,
-      "family": 1
+      "family": 1,
+      "art": 1,
+      "animal": 0,
+      "flower": 0,
+      "night": 2
     },
     "facts": [
       "明治政府が横浜税関の保税倉庫として建設し、2号館は1911年、1号館は1913年に竣工した",
@@ -294,6 +349,7 @@
     "name": "小町通り",
     "genre": "gourmet",
     "area": "鎌倉市",
+    "region": "kamakura",
     "lat": 35.3207763,
     "lng": 139.5519605,
     "budget": 1,
@@ -305,7 +361,11 @@
       "active": 1,
       "relax": 0,
       "indoor": 1,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "鎌倉駅東口から鶴岡八幡宮方面へ延びる、全長約360メートルの通り",
@@ -320,6 +380,7 @@
     "name": "横浜・八景島シーパラダイス",
     "genre": "leisure",
     "area": "横浜市金沢区",
+    "region": "yokohama",
     "lat": 35.3365027,
     "lng": 139.6457835,
     "budget": 3,
@@ -331,7 +392,11 @@
       "active": 2,
       "relax": 0,
       "indoor": 3,
-      "family": 3
+      "family": 3,
+      "art": 0,
+      "animal": 3,
+      "flower": 0,
+      "night": 1
     },
     "facts": [
       "人工島・八景島にある、水族館・遊園地・ショッピングモール・ホテルなどの複合型テーマパーク",
@@ -346,6 +411,7 @@
     "name": "さがみ湖MORI MORI（旧 相模湖プレジャーフォレスト）",
     "genre": "leisure",
     "area": "相模原市緑区",
+    "region": "kenoh",
     "lat": 35.6054026,
     "lng": 139.2076487,
     "budget": 3,
@@ -357,7 +423,11 @@
       "active": 3,
       "relax": 0,
       "indoor": 0,
-      "family": 3
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 2
     },
     "facts": [
       "自然に親しむことをコンセプトにした複合レジャー施設（アウトドアリゾート）",
@@ -372,6 +442,7 @@
     "name": "カップヌードルミュージアム横浜",
     "genre": "leisure",
     "area": "横浜市中区",
+    "region": "yokohama",
     "lat": 35.4554953,
     "lng": 139.6388891,
     "budget": 2,
@@ -383,7 +454,11 @@
       "active": 1,
       "relax": 0,
       "indoor": 3,
-      "family": 3
+      "family": 3,
+      "art": 2,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "日清食品創業者・安藤百福の業績を記念した企業博物館",
@@ -398,6 +473,7 @@
     "name": "箱根湯本温泉",
     "genre": "onsen",
     "area": "足柄下郡箱根町",
+    "region": "hakone",
     "lat": 35.2333709,
     "lng": 139.1036639,
     "budget": 3,
@@ -409,7 +485,11 @@
       "active": 1,
       "relax": 3,
       "indoor": 2,
-      "family": 2
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "箱根温泉の開湯は738年とされ、湯本の「惣湯」が始まりとされる",
@@ -424,6 +504,7 @@
     "name": "湯河原温泉",
     "genre": "onsen",
     "area": "足柄下郡湯河原町",
+    "region": "seisho",
     "lat": 35.1457298,
     "lng": 139.0730642,
     "budget": 3,
@@ -435,7 +516,11 @@
       "active": 0,
       "relax": 3,
       "indoor": 2,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "湯河原火山の浸食カルデラ内に湧く温泉",
@@ -451,6 +536,7 @@
     "name": "七沢温泉",
     "genre": "onsen",
     "area": "厚木市",
+    "region": "kenoh",
     "lat": 35.4479966,
     "lng": 139.2878076,
     "budget": 2,
@@ -462,7 +548,11 @@
       "active": 1,
       "relax": 3,
       "indoor": 2,
-      "family": 1
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
     },
     "facts": [
       "厚木市七沢にある、江戸時代に開湯した温泉",
@@ -471,5 +561,2517 @@
       "作家の小林多喜二が1931年に旅館「福元館」に滞在した"
     ],
     "summary": "丹沢のふもとにある、ぬるぬるの湯の温泉郷"
+  },
+  {
+    "id": "odawarajo",
+    "name": "小田原城",
+    "genre": "history",
+    "area": "小田原市",
+    "region": "seisho",
+    "lat": 35.2510547,
+    "lng": 139.1534249,
+    "budget": 2,
+    "tags": {
+      "history": 3,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 1,
+      "family": 2,
+      "art": 1,
+      "animal": 0,
+      "flower": 1,
+      "night": 0
+    },
+    "facts": [
+      "戦国時代から江戸時代にかけての平山城",
+      "北条氏の本拠地として有名",
+      "江戸時代には小田原藩の藩庁があった",
+      "城跡は国の史跡に指定されている"
+    ],
+    "summary": "北条氏の本拠地として知られる小田原の城"
+  },
+  {
+    "id": "kenchoji",
+    "name": "建長寺",
+    "genre": "history",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3324455,
+    "lng": 139.5575336,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "鎌倉時代の建長5年（1253年）に創建された、臨済宗建長寺派の大本山",
+      "開基は鎌倉幕府第5代執権・北条時頼、開山は南宋の禅僧・蘭渓道隆",
+      "鎌倉五山の第一位",
+      "境内は国の史跡に指定されている"
+    ],
+    "summary": "鎌倉五山の第一位に数えられる禅寺"
+  },
+  {
+    "id": "engakuji",
+    "name": "円覚寺",
+    "genre": "history",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3379364,
+    "lng": 139.5478197,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "弘安5年（1282年）に執権・北条時宗が元寇の戦没者追悼のため創建した",
+      "臨済宗円覚寺派の大本山で、鎌倉五山第二位に列せられる",
+      "JR北鎌倉駅の駅前に総門がある",
+      "夏目漱石や島崎藤村が参禅したことで知られる"
+    ],
+    "summary": "北条時宗が創建した、北鎌倉の禅寺"
+  },
+  {
+    "id": "hakonejinja",
+    "name": "箱根神社",
+    "genre": "history",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2039731,
+    "lng": 139.0255832,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "箱根町元箱根にある神社で、かつては箱根権現とも称された",
+      "祭神は瓊瓊杵尊・木花咲耶姫命・彦火火出見尊の三神の総称「箱根大神」",
+      "鎌倉時代には鎌倉幕府の篤い崇敬と保護を受け、武家たちの信仰を集めた",
+      "奥宮として箱根元宮がある"
+    ],
+    "summary": "武家の信仰を集めた、元箱根の神社"
+  },
+  {
+    "id": "oyamaafuri",
+    "name": "大山阿夫利神社",
+    "genre": "history",
+    "area": "伊勢原市",
+    "region": "kenoh",
+    "lat": 35.4318696,
+    "lng": 139.238021,
+    "budget": 2,
+    "tags": {
+      "history": 3,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 3,
+      "relax": 0,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "伊勢原市の大山（別名: 雨降山）にある神社",
+      "『延喜式神名帳』に記載された相模国の式内社の一社",
+      "大山の山頂に本社、中腹に下社が鎮座する",
+      "下社までは大山ケーブルカーで行くことができる"
+    ],
+    "summary": "大山の山頂と中腹にまつられる古社"
+  },
+  {
+    "id": "samukawa",
+    "name": "寒川神社",
+    "genre": "history",
+    "area": "高座郡寒川町",
+    "region": "shonan",
+    "lat": 35.3788954,
+    "lng": 139.3830774,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 0,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "相模國一之宮で、式内社（名神大社）",
+      "年間約200万人の参拝者が訪れる",
+      "初詣の参拝者数は神奈川県内の神社で鶴岡八幡宮に次いで2番目に多い"
+    ],
+    "summary": "年間約200万人が参拝する相模国一之宮"
+  },
+  {
+    "id": "kawasakidaishi",
+    "name": "川崎大師（平間寺）",
+    "genre": "history",
+    "area": "川崎市川崎区",
+    "region": "kawasaki",
+    "lat": 35.5342515,
+    "lng": 139.7294416,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 0,
+      "sea": 0,
+      "food": 1,
+      "active": 1,
+      "relax": 0,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "正式名称は平間寺で、真言宗智山派の大本山",
+      "1128年（大治3年）に建立された",
+      "海から引き揚げた弘法大師の木像を、厄除けを願って供養したことが始まりとされる",
+      "本尊として弘法大師を祀る",
+      "江戸時代から参詣客で賑わった"
+    ],
+    "summary": "弘法大師をまつる、川崎の大本山"
+  },
+  {
+    "id": "tonodake",
+    "name": "塔ノ岳",
+    "genre": "nature",
+    "area": "秦野市・愛甲郡清川村・足柄上郡山北町",
+    "region": "kenoh",
+    "lat": 35.4540704,
+    "lng": 139.163317,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 3,
+      "relax": 0,
+      "indoor": 0,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "丹沢山地の南部にある標高1,491mの山",
+      "秦野市・清川村・山北町の境に位置し、丹沢大山国定公園に属する",
+      "江戸時代末期から昭和期にかけて、雨乞いなどを祈願する信仰登山で賑わった",
+      "山頂には山小屋「尊仏山荘」が建つ"
+    ],
+    "summary": "信仰登山の歴史をもつ丹沢の山（1,491m）"
+  },
+  {
+    "id": "kintokiyama",
+    "name": "金時山",
+    "genre": "nature",
+    "area": "足柄下郡箱根町・南足柄市",
+    "region": "hakone",
+    "lat": 35.2896965,
+    "lng": 139.0048479,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 3,
+      "relax": 0,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "箱根山の北西部に位置する標高1,212mの山",
+      "別名は猪鼻岳で、頂上に猪鼻神社が祀られている",
+      "日本三百名山のひとつ",
+      "箱根山カルデラを囲む外輪山列で最も高い山",
+      "一帯は富士箱根伊豆国立公園に指定されている"
+    ],
+    "summary": "箱根の外輪山で最も高い山（1,212m）"
+  },
+  {
+    "id": "tanzawako",
+    "name": "丹沢湖",
+    "genre": "nature",
+    "area": "足柄上郡山北町",
+    "region": "seisho",
+    "lat": 35.4195153,
+    "lng": 139.0453659,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 2,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "1978年に三保ダムによって誕生した人造湖",
+      "丹沢大山国定公園に含まれる",
+      "湖畔から富士山を望む景勝地で、「ダム湖百選」などに選ばれている",
+      "湖面や湖畔はレクリエーションにも利用されている"
+    ],
+    "summary": "富士山を望む、西丹沢のダム湖"
+  },
+  {
+    "id": "shasui",
+    "name": "洒水の滝",
+    "genre": "nature",
+    "area": "足柄上郡山北町",
+    "region": "seisho",
+    "lat": 35.3524473,
+    "lng": 139.0615444,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 0,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "名水百選・日本の滝百選・「かながわの景勝50選」に選ばれている",
+      "三段の滝で、一の滝の落差は69m",
+      "鎌倉時代初期に僧・文覚が荒行を積んだ地とされる",
+      "遊歩道と観瀑台が整備されている"
+    ],
+    "summary": "日本の滝百選に選ばれた三段の滝"
+  },
+  {
+    "id": "ogusuyama",
+    "name": "大楠山",
+    "genre": "nature",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.2502062,
+    "lng": 139.6280609,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 3,
+      "sea": 2,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "三浦半島最高峰の山（海抜241.3m）",
+      "日本百低山に選ばれている",
+      "山頂から相模湾・東京湾を望み、条件が良ければ富士山も眺められる",
+      "ハイキングコースが整備されている"
+    ],
+    "summary": "海と富士山を一望できる三浦半島の最高峰"
+  },
+  {
+    "id": "ikuta",
+    "name": "生田緑地",
+    "genre": "nature",
+    "area": "川崎市多摩区・宮前区",
+    "region": "kawasaki",
+    "lat": 35.6099693,
+    "lng": 139.5594796,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 2,
+      "relax": 2,
+      "indoor": 0,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "川崎市内最大の都市公園",
+      "多摩丘陵が多摩川に接する東端の一角に位置する",
+      "入場は無料（一部施設は有料）",
+      "鎌倉時代に稲毛三郎重成が枡形山に枡形城を築いたとされる"
+    ],
+    "summary": "多摩丘陵の森が残る、川崎市最大の公園"
+  },
+  {
+    "id": "sagamilake",
+    "name": "相模湖",
+    "genre": "nature",
+    "area": "相模原市緑区",
+    "region": "kenoh",
+    "lat": 35.6106949,
+    "lng": 139.1878024,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "相模川を相模ダムでせき止めて作られた人造湖",
+      "戦後にできたダム湖としては日本初（相模ダムの完成は1947年）",
+      "人造湖に「○○湖」と命名した最初の例",
+      "上水道・発電・レジャーなどに利用されている"
+    ],
+    "summary": "戦後初のダム湖として生まれた相模原の湖"
+  },
+  {
+    "id": "shichirigahama",
+    "name": "七里ヶ浜",
+    "genre": "sea",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3039934,
+    "lng": 139.5140657,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 3,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
+    },
+    "facts": [
+      "相模湾に面した約2.9kmの浜で、稲村ヶ崎と小動岬の間にある",
+      "日本の渚100選の一つ",
+      "複雑な波が立つため、サーフィンには適するが海水浴には適さない",
+      "海岸線に沿って江ノ島電鉄線と国道134号が走る"
+    ],
+    "summary": "江ノ電と国道が沿って走る、相模湾の浜"
+  },
+  {
+    "id": "sarushima",
+    "name": "猿島",
+    "genre": "sea",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.286067,
+    "lng": 139.6940563,
+    "budget": 2,
+    "tags": {
+      "history": 2,
+      "nature": 3,
+      "sea": 3,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "横須賀市沖にある無人島で、東京湾で自然林のある最大の無人島",
+      "横須賀市が「猿島公園」として整備している",
+      "明治時代に築造された砲台の要塞跡が残り、国の史跡に指定されている",
+      "島からは縄文時代や弥生時代の土器が出土している"
+    ],
+    "summary": "要塞跡が残る、東京湾最大の自然島"
+  },
+  {
+    "id": "kannonzaki",
+    "name": "観音崎公園",
+    "genre": "sea",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.2559599,
+    "lng": 139.7392797,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 3,
+      "sea": 3,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "神奈川県立の都市公園で、神奈川県下最大の公園",
+      "明治時代に砲台が設置され、太平洋戦争の終結まで軍の要塞として使われた",
+      "長く立ち入りが禁止されていたため、良い自然環境が残された",
+      "園内に横須賀美術館や観音崎自然博物館がある"
+    ],
+    "summary": "砲台跡と自然が残る、県下最大の公園"
+  },
+  {
+    "id": "manazuru",
+    "name": "真鶴半島",
+    "genre": "sea",
+    "area": "足柄下郡真鶴町",
+    "region": "seisho",
+    "lat": 35.146,
+    "lng": 139.1481944,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 3,
+      "sea": 3,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "高さ20mほどの岸壁が続く小さな半島",
+      "松や楠などの常緑樹の大木とシダ類が茂る原生林が残る",
+      "先端の三ツ石は神奈川県の名勝地で、引潮の際には歩いて渡ることができる",
+      "真鶴半島でしか採取されない石として本小松石がある"
+    ],
+    "summary": "原生林と三ツ石で知られる小さな半島"
+  },
+  {
+    "id": "southernbeach",
+    "name": "サザンビーチちがさき",
+    "genre": "sea",
+    "area": "茅ヶ崎市",
+    "region": "shonan",
+    "lat": 35.3171877,
+    "lng": 139.3980517,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 3,
+      "food": 1,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "茅ヶ崎市中海岸にある海水浴場",
+      "旧称は茅ヶ崎海水浴場",
+      "名称はサザンオールスターズに肖ったもの"
+    ],
+    "summary": "サザンオールスターズにちなむ茅ヶ崎の海水浴場"
+  },
+  {
+    "id": "miurakaigan",
+    "name": "三浦海岸",
+    "genre": "sea",
+    "area": "三浦市",
+    "region": "miura",
+    "lat": 35.185056,
+    "lng": 139.655176,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 3,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "三浦半島の東京湾（金田湾）側に砂浜が続く海岸",
+      "1959年に海岸保全区域に指定された",
+      "三浦海岸海水浴場があり、かつては首都圏有数の海水浴場として賑わった"
+    ],
+    "summary": "首都圏有数の海水浴場として賑わった砂浜"
+  },
+  {
+    "id": "inamuragasaki",
+    "name": "稲村ヶ崎",
+    "genre": "sea",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3016962,
+    "lng": 139.5254624,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 3,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
+    },
+    "facts": [
+      "由比ヶ浜と七里ヶ浜の間にある岬",
+      "「稲村ヶ崎」の名称は国の史跡に使われている",
+      "1333年に新田義貞が太刀を海に投じると潮が引き、鎌倉に攻め入ったという伝説が『太平記』に記されている",
+      "古くから良質な砂鉄がとれることで知られる"
+    ],
+    "summary": "新田義貞の伝説が残る、鎌倉の岬"
+  },
+  {
+    "id": "ramenmuseum",
+    "name": "新横浜ラーメン博物館",
+    "genre": "gourmet",
+    "area": "横浜市港北区",
+    "region": "yokohama",
+    "lat": 35.5098496,
+    "lng": 139.6145269,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 0,
+      "sea": 0,
+      "food": 3,
+      "active": 0,
+      "relax": 0,
+      "indoor": 3,
+      "family": 2,
+      "art": 1,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
+    },
+    "facts": [
+      "ラーメンに関するフードテーマパークで、通称「ラー博」",
+      "全国各地の有名ラーメン店舗を中心に構成されている",
+      "ミュージアムショップや駄菓子屋、喫茶店なども併設している"
+    ],
+    "summary": "全国の有名ラーメン店が集まるフードテーマパーク"
+  },
+  {
+    "id": "misakiport",
+    "name": "三崎漁港",
+    "genre": "gourmet",
+    "area": "三浦市",
+    "region": "miura",
+    "lat": 35.1409069,
+    "lng": 139.6163704,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 1,
+      "sea": 3,
+      "food": 3,
+      "active": 1,
+      "relax": 0,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "日本有数のマグロ基地とされる",
+      "全国に13しかない特定第3種漁港の一つ",
+      "東京湾の入口に位置し、城ヶ島に遮蔽されている",
+      "2012年には神奈川県全体の水揚量の54%を占めた"
+    ],
+    "summary": "日本有数のマグロ基地として知られる漁港"
+  },
+  {
+    "id": "odawaraport",
+    "name": "小田原漁港",
+    "genre": "gourmet",
+    "area": "小田原市",
+    "region": "seisho",
+    "lat": 35.2344853,
+    "lng": 139.144916,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 2,
+      "food": 3,
+      "active": 1,
+      "relax": 0,
+      "indoor": 1,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "別名「早川漁港」と呼ばれる第3種漁港",
+      "アジやイワシなどが水揚げされる",
+      "魚市場の2階に魚市場食堂がある",
+      "2019年に「漁港の駅 TOTOCO小田原」が開設された"
+    ],
+    "summary": "地魚の食堂や朝市がある、小田原の漁港"
+  },
+  {
+    "id": "dobuita",
+    "name": "どぶ板通り",
+    "genre": "gourmet",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.2818854,
+    "lng": 139.6657539,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 0,
+      "sea": 0,
+      "food": 2,
+      "active": 1,
+      "relax": 0,
+      "indoor": 1,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
+    },
+    "facts": [
+      "横須賀市中心部にある全長300mほどの商店街",
+      "スカジャンの発祥地として有名",
+      "アメリカと日本の文化が融合した独特の雰囲気をもつ",
+      "かつて道の中央を流れるどぶ川に鉄板で蓋をしたことが名前の由来"
+    ],
+    "summary": "スカジャン発祥の地として知られる横須賀の商店街"
+  },
+  {
+    "id": "motomachi",
+    "name": "横浜元町",
+    "genre": "gourmet",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.4402292,
+    "lng": 139.6479342,
+    "budget": 2,
+    "tags": {
+      "history": 2,
+      "nature": 0,
+      "sea": 0,
+      "food": 2,
+      "active": 1,
+      "relax": 0,
+      "indoor": 1,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "150年以上の歴史がある元町商店街は、横浜を代表する商業地の一つ",
+      "元町通りを中心とする「元町ショッピングストリート」がある",
+      "ショッピングストリートの両端には商店街の目印「フェニックスアーチ」が立つ"
+    ],
+    "summary": "150年以上の歴史をもつ横浜の商店街"
+  },
+  {
+    "id": "suzuhiro",
+    "name": "鈴廣かまぼこの里",
+    "genre": "gourmet",
+    "area": "小田原市",
+    "region": "seisho",
+    "lat": 35.2459153,
+    "lng": 139.1298412,
+    "budget": 2,
+    "tags": {
+      "history": 2,
+      "nature": 0,
+      "sea": 0,
+      "food": 3,
+      "active": 0,
+      "relax": 0,
+      "indoor": 2,
+      "family": 2,
+      "art": 1,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "慶応元年（1865年）創業の、小田原蒲鉾を中心とした食品会社",
+      "かまぼこの製造・販売のほか、「かまぼこ板絵美術館」やレストランも運営している",
+      "創業の頃、蒲鉾は小田原宿や箱根温泉の客に賞味されていた"
+    ],
+    "summary": "慶応元年創業、小田原かまぼこの老舗"
+  },
+  {
+    "id": "koshigoe",
+    "name": "腰越漁港",
+    "genre": "gourmet",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3066667,
+    "lng": 139.4916667,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 3,
+      "food": 3,
+      "active": 1,
+      "relax": 1,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "鎌倉市腰越にある第1種漁港",
+      "港から江の島を一望できる",
+      "シラスの引き網漁業が行われている",
+      "定期的に朝市が開かれ、その日の朝にとれたシラスなどが販売される"
+    ],
+    "summary": "シラス漁が盛んな、江の島を望む漁港"
+  },
+  {
+    "id": "cosmoworld",
+    "name": "よこはまコスモワールド",
+    "genre": "leisure",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.4556655,
+    "lng": 139.6355287,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 1,
+      "food": 1,
+      "active": 3,
+      "relax": 0,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 3
+    },
+    "facts": [
+      "みなとみらい地区にある都市型遊園地",
+      "入園は無料で、アトラクションごとに料金を支払う",
+      "シンボル的存在は大観覧車",
+      "エリア内ではショップも営業している"
+    ],
+    "summary": "大観覧車がシンボルの、みなとみらいの遊園地"
+  },
+  {
+    "id": "kodomonokuni",
+    "name": "こどもの国",
+    "genre": "leisure",
+    "area": "横浜市青葉区（一部 東京都町田市）",
+    "region": "yokohama",
+    "lat": 35.5618827,
+    "lng": 139.4911052,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 3,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 2,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "1965年5月5日のこどもの日に開園した総合的な児童厚生施設",
+      "横浜市青葉区と東京都町田市にまたがる",
+      "自然の中での冒険や動物とのふれあいなど、素朴な遊び体験を重視している",
+      "観覧車やジェットコースターのような大型の電動遊具はない"
+    ],
+    "summary": "自然の中で遊べる、こどもの日に開園した施設"
+  },
+  {
+    "id": "soleil",
+    "name": "長井海の手公園 ソレイユの丘",
+    "genre": "leisure",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.1963947,
+    "lng": 139.6116082,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 1,
+      "food": 1,
+      "active": 3,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 1,
+      "flower": 1,
+      "night": 0
+    },
+    "facts": [
+      "横須賀市にある体験型総合公園で、通称は「ソレイユの丘」",
+      "2023年4月に「365日誰もがまるごと遊び楽しめるエンターテイメントパーク」としてリニューアルした",
+      "正式名称は長井海の手公園"
+    ],
+    "summary": "一日遊べる、横須賀の体験型総合公園"
+  },
+  {
+    "id": "kowakien",
+    "name": "箱根小涌園",
+    "genre": "leisure",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2393532,
+    "lng": 139.0451608,
+    "budget": 3,
+    "tags": {
+      "history": 1,
+      "nature": 1,
+      "sea": 0,
+      "food": 1,
+      "active": 2,
+      "relax": 3,
+      "indoor": 2,
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "宿泊施設や日帰り入浴・温泉レジャー施設「ユネッサン」などからなるリゾート",
+      "旧藤田平太郎男爵別荘（現「貴賓館」）をはじめ複数の登録有形文化財建造物を所有する",
+      "全域が国立公園の特別地域にある",
+      "名称は所在地の小涌谷温泉に由来する"
+    ],
+    "summary": "温泉レジャー施設ユネッサンなどがある箱根のリゾート"
+  },
+  {
+    "id": "oisolongbeach",
+    "name": "大磯ロングビーチ",
+    "genre": "leisure",
+    "area": "中郡大磯町",
+    "region": "shonan",
+    "lat": 35.3009275,
+    "lng": 139.2822028,
+    "budget": 3,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 2,
+      "food": 0,
+      "active": 3,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "大磯プリンスホテルに併設された、屋外プールを主としたレジャー施設",
+      "1957年に開業した",
+      "波のプール・流れるプール・ダイビングプール・ウォータースライダーなどがある",
+      "プール以外にボウリングセンターやテニスコートなどもある"
+    ],
+    "summary": "波のプールなどがそろう、海岸沿いの大型プール"
+  },
+  {
+    "id": "anpanman",
+    "name": "横浜アンパンマンこどもミュージアム",
+    "genre": "leisure",
+    "area": "横浜市西区",
+    "region": "yokohama",
+    "lat": 35.4632355,
+    "lng": 139.6289425,
+    "budget": 3,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 0,
+      "food": 1,
+      "active": 2,
+      "relax": 0,
+      "indoor": 3,
+      "family": 3,
+      "art": 1,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "『アンパンマン』をテーマとした参加型ミュージアムとショッピングモールの複合施設",
+      "みなとみらい地区にある",
+      "2007年に開館し、2019年に現在の場所へ移転リニューアルした"
+    ],
+    "summary": "アンパンマンがテーマの参加型ミュージアム"
+  },
+  {
+    "id": "tsujido",
+    "name": "辻堂海浜公園",
+    "genre": "leisure",
+    "area": "藤沢市",
+    "region": "shonan",
+    "lat": 35.3212805,
+    "lng": 139.4481669,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 1,
+      "food": 0,
+      "active": 3,
+      "relax": 1,
+      "indoor": 1,
+      "family": 3,
+      "art": 1,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "藤沢市辻堂西海岸にある神奈川県立の都市公園",
+      "「かながわの公園50選」に選ばれている",
+      "有料のジャンボプールや交通展示館がある",
+      "交通公園には小田急の電車が静態保存されている"
+    ],
+    "summary": "ジャンボプールや交通公園がある海辺の県立公園"
+  },
+  {
+    "id": "ubako",
+    "name": "姥子温泉",
+    "genre": "onsen",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2433378,
+    "lng": 139.0092333,
+    "budget": 2,
+    "tags": {
+      "history": 2,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "箱根カルデラの中央火口丘の最高峰・神山の北西斜面にある温泉",
+      "箱根温泉郷の中でも歴史の古い温泉のひとつ",
+      "箱根七湯にこの温泉を加えて「箱根八湯」と称することがある",
+      "季節によって湧出量が変わり、冬に少なく夏に多い"
+    ],
+    "summary": "箱根でも古い歴史をもつ神山の温泉"
+  },
+  {
+    "id": "sokokura",
+    "name": "底倉温泉",
+    "genre": "onsen",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.244028,
+    "lng": 139.056806,
+    "budget": 3,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "宮ノ下温泉の西隣、蛇骨川に沿った深い谷にある温泉",
+      "中世の昔から隠れ湯として知られた",
+      "江戸時代から箱根七湯のひとつに数えられた"
+    ],
+    "summary": "中世から隠れ湯として知られた箱根七湯"
+  },
+  {
+    "id": "ashinoyu",
+    "name": "芦之湯温泉",
+    "genre": "onsen",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.219776,
+    "lng": 139.043487,
+    "budget": 3,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "駒ヶ岳南麓の標高約870m地点にある、箱根七湯のひとつ",
+      "鎌倉時代には温泉が湧き出していたことが記録からわかっている",
+      "泉質は硫黄泉・硫酸塩泉など",
+      "2015年に国民保養温泉地に指定された"
+    ],
+    "summary": "駒ヶ岳南麓にある、箱根七湯の硫黄泉"
+  },
+  {
+    "id": "tsurumaki",
+    "name": "鶴巻温泉",
+    "genre": "onsen",
+    "area": "秦野市",
+    "region": "kenoh",
+    "lat": 35.3808983,
+    "lng": 139.2775365,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "秦野市にある小規模な温泉郷",
+      "最寄り駅は小田急小田原線の鶴巻温泉駅",
+      "カルシウムイオンが牛乳並みに多く含まれる弱アルカリ性塩化物泉",
+      "1918年に温泉旅館が開業した"
+    ],
+    "summary": "駅前に広がる、秦野の小さな温泉郷"
+  },
+  {
+    "id": "iiyama",
+    "name": "飯山温泉",
+    "genre": "onsen",
+    "area": "厚木市",
+    "region": "kenoh",
+    "lat": 35.4805774,
+    "lng": 139.3051615,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "厚木市飯山にある温泉",
+      "pH11.3というアルカリ度の高いアルカリ性単純温泉で、「美人の湯」「美肌の湯」とも呼ばれる",
+      "丹沢の山々が近い、厚木市の奥座敷に位置する"
+    ],
+    "summary": "pH11.3の強アルカリ泉が湧く、厚木の温泉"
+  },
+  {
+    "id": "nakagawaonsen",
+    "name": "中川温泉",
+    "genre": "onsen",
+    "area": "足柄上郡山北町",
+    "region": "seisho",
+    "lat": 35.4438875,
+    "lng": 139.0495859,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "山北町中川、丹沢湖の北にある温泉",
+      "pH10前後の高いアルカリ性を示す単純温泉",
+      "武田信玄の隠し湯といわれている",
+      "町営の日帰り温泉「ぶなの湯」がある"
+    ],
+    "summary": "武田信玄の隠し湯といわれる丹沢湖北の温泉"
+  },
+  {
+    "id": "kosoji",
+    "name": "広沢寺温泉",
+    "genre": "onsen",
+    "area": "厚木市",
+    "region": "kenoh",
+    "lat": 35.4532855,
+    "lng": 139.2840026,
+    "budget": 3,
+    "tags": {
+      "history": 1,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 3,
+      "indoor": 1,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "厚木市七沢にある温泉で、七沢温泉郷に含まれる",
+      "旅館は玉翠楼の1軒のみ",
+      "pH10.3とアルカリ度が高く、「美人の湯」とも言われる",
+      "開湯は昭和初期で、当時造られた浴槽が残る"
+    ],
+    "summary": "一軒宿が守る、七沢温泉郷の静かな温泉"
+  },
+  {
+    "id": "chokokunomori",
+    "name": "箱根 彫刻の森美術館",
+    "genre": "museum",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2442838,
+    "lng": 139.0520834,
+    "budget": 3,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 1,
+      "family": 2,
+      "art": 3,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "野外彫刻を中心とした美術館",
+      "箱根町二ノ平と木賀にまたがる",
+      "姉妹施設に美ヶ原高原美術館がある"
+    ],
+    "summary": "野外彫刻を中心とした、箱根の美術館"
+  },
+  {
+    "id": "pola",
+    "name": "ポーラ美術館",
+    "genre": "museum",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2566563,
+    "lng": 139.0212049,
+    "budget": 3,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 2,
+      "indoor": 3,
+      "family": 1,
+      "art": 3,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "箱根町仙石原にある美術館",
+      "印象派絵画のコレクションは日本最大級",
+      "富士箱根伊豆国立公園に位置し、ブナやヒメシャラなどが見られる遊歩道がある"
+    ],
+    "summary": "印象派絵画のコレクションで知られる仙石原の美術館"
+  },
+  {
+    "id": "fujiko",
+    "name": "川崎市 藤子・F・不二雄ミュージアム",
+    "genre": "museum",
+    "area": "川崎市多摩区",
+    "region": "kawasaki",
+    "lat": 35.6098389,
+    "lng": 139.5736331,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 3,
+      "art": 3,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "漫画家・藤子・F・不二雄の作品原画や関連資料を中心に展示している",
+      "2011年9月3日に開館した",
+      "川崎市多摩区にある"
+    ],
+    "summary": "藤子・F・不二雄の原画を展示するミュージアム"
+  },
+  {
+    "id": "seimeinohoshi",
+    "name": "神奈川県立生命の星・地球博物館",
+    "genre": "museum",
+    "area": "小田原市",
+    "region": "seisho",
+    "lat": 35.2393863,
+    "lng": 139.1215819,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 0,
+      "indoor": 3,
+      "family": 3,
+      "art": 2,
+      "animal": 1,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "小田原市にある自然科学系の博物館",
+      "神奈川県が設置・運営している",
+      "地球と生命の営みに関する資料の収集・保管・展示を行っている"
+    ],
+    "summary": "地球と生命の歴史を学べる、県立の自然科学博物館"
+  },
+  {
+    "id": "haratetsudo",
+    "name": "原鉄道模型博物館",
+    "genre": "museum",
+    "area": "横浜市西区",
+    "region": "yokohama",
+    "lat": 35.463149,
+    "lng": 139.6250863,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 0,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 3,
+      "art": 3,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "鉄道模型などを展示する博物館",
+      "横浜三井ビルディングの2階にある",
+      "三井不動産が運営している"
+    ],
+    "summary": "鉄道模型を展示する、みなとみらいの博物館"
+  },
+  {
+    "id": "yokohamabijutsukan",
+    "name": "横浜美術館",
+    "genre": "museum",
+    "area": "横浜市西区",
+    "region": "yokohama",
+    "lat": 35.4570993,
+    "lng": 139.6305271,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 1,
+      "art": 3,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "みなとみらい地区にある美術館",
+      "1989年に横浜博覧会のパビリオンとして開館した",
+      "改修のための長期休館を経て、2025年2月に全館再オープンした"
+    ],
+    "summary": "1989年開館、みなとみらいの美術館"
+  },
+  {
+    "id": "minkaen",
+    "name": "川崎市立日本民家園",
+    "genre": "museum",
+    "area": "川崎市多摩区",
+    "region": "kawasaki",
+    "lat": 35.6087072,
+    "lng": 139.5594639,
+    "budget": 2,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 1,
+      "family": 2,
+      "art": 2,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "日本の古民家を中心とした野外博物館で、正式名称は川崎市立日本民家園",
+      "生田緑地の丘陵地形を生かしたつくりになっている",
+      "古民家や水車小屋などの建物と民具を保存・展示している",
+      "1967年に開園した"
+    ],
+    "summary": "古民家が立ち並ぶ、生田緑地の野外博物館"
+  },
+  {
+    "id": "yokosukabijutsukan",
+    "name": "横須賀美術館",
+    "genre": "museum",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.2596667,
+    "lng": 139.7380107,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 2,
+      "food": 0,
+      "active": 0,
+      "relax": 2,
+      "indoor": 3,
+      "family": 1,
+      "art": 3,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "観音崎公園内にある美術館",
+      "横須賀市の市制100周年を記念して2007年に開館した",
+      "別館として谷内六郎館を併設している"
+    ],
+    "summary": "観音崎公園内にある、海に面した美術館"
+  },
+  {
+    "id": "mikasa",
+    "name": "記念艦「三笠」",
+    "genre": "museum",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.2851844,
+    "lng": 139.6743413,
+    "budget": 2,
+    "tags": {
+      "history": 3,
+      "nature": 0,
+      "sea": 2,
+      "food": 0,
+      "active": 1,
+      "relax": 0,
+      "indoor": 2,
+      "family": 1,
+      "art": 2,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "日露戦争の日本海海戦で連合艦隊旗艦を務めた戦艦",
+      "横須賀市に静態保存されており、世界三大記念艦の一つとされる",
+      "横須賀新港に面した三笠公園で保存・公開されている"
+    ],
+    "summary": "日本海海戦の旗艦を保存した記念艦"
+  },
+  {
+    "id": "sagamiharamuseum",
+    "name": "相模原市立博物館",
+    "genre": "museum",
+    "area": "相模原市中央区",
+    "region": "kenoh",
+    "lat": 35.5593079,
+    "lng": 139.3930755,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 3,
+      "art": 2,
+      "animal": 0,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "1995年に開館した相模原市立の博物館",
+      "常設展示では相模野台地の成り立ちから現代までの郷土の歴史や自然を解説している",
+      "プラネタリウムや天文展示室がある",
+      "南東隣にはJAXA相模原キャンパスがある"
+    ],
+    "summary": "プラネタリウムがある、相模原の郷土博物館"
+  },
+  {
+    "id": "enosui",
+    "name": "新江ノ島水族館",
+    "genre": "animal",
+    "area": "藤沢市",
+    "region": "shonan",
+    "lat": 35.310075,
+    "lng": 139.4794388,
+    "budget": 3,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 3,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 3,
+      "art": 1,
+      "animal": 3,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "藤沢市片瀬海岸の湘南海岸公園にある水族館",
+      "愛称は「えのすい」",
+      "1954年開業の江の島水族館の後継施設として、2004年にオープンした"
+    ],
+    "summary": "湘南の海に面した、愛称「えのすい」の水族館"
+  },
+  {
+    "id": "zoorasia",
+    "name": "よこはま動物園ズーラシア",
+    "genre": "animal",
+    "area": "横浜市旭区",
+    "region": "yokohama",
+    "lat": 35.4953194,
+    "lng": 139.52375,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 2,
+      "relax": 0,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 3,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "横浜市旭区にある動物園で、正式名称は横浜市立よこはま動物園",
+      "「生命の共生・自然との調和」をメインテーマに運営している",
+      "愛称は動物園（Zoo）とユーラシア（Eurasia）を合わせた造語で、1996年に市民公募で選ばれた"
+    ],
+    "summary": "広い自然の中で動物を見られる、横浜の動物園"
+  },
+  {
+    "id": "nogeyama",
+    "name": "野毛山動物園",
+    "genre": "animal",
+    "area": "横浜市西区",
+    "region": "yokohama",
+    "lat": 35.4475396,
+    "lng": 139.6226411,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 0,
+      "indoor": 1,
+      "family": 3,
+      "art": 0,
+      "animal": 3,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "横浜市西区の野毛山公園内にある横浜市立の動物園",
+      "アミメキリンやレッサーパンダなど100種類以上、1,000点以上の動物を擁する",
+      "爬虫類専用の展示館がある",
+      "入園料は無料"
+    ],
+    "summary": "100種類以上の動物がいる、野毛山公園の動物園"
+  },
+  {
+    "id": "kanazawazoo",
+    "name": "金沢動物園（金沢自然公園）",
+    "genre": "animal",
+    "area": "横浜市金沢区",
+    "region": "yokohama",
+    "lat": 35.3515833,
+    "lng": 139.6002222,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 1,
+      "food": 0,
+      "active": 2,
+      "relax": 0,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 3,
+      "flower": 1,
+      "night": 0
+    },
+    "facts": [
+      "横浜市立金沢動物園は、金沢区の金沢自然公園の中にある",
+      "金沢自然公園は「かながわの公園50選」に選定されている",
+      "丘陵地にあり、東京湾や八景島シーパラダイスなどを遠望できる",
+      "園内にはアスレチック遊具やローラーすべり台がある広場もある"
+    ],
+    "summary": "丘の上の自然公園にある、横浜市立の動物園"
+  },
+  {
+    "id": "yumemigasaki",
+    "name": "夢見ヶ崎動物公園",
+    "genre": "animal",
+    "area": "川崎市幸区",
+    "region": "kawasaki",
+    "lat": 35.549562,
+    "lng": 139.664968,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 3,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "川崎市幸区の加瀬山山頂付近にある市立の動物公園",
+      "比較的小型の動物が多く、レッサーパンダはマスコミでも取り上げられたことがある",
+      "入園料は無料",
+      "地名は、太田道灌が築城を考えたが悪夢を見て断念したという伝説に由来する"
+    ],
+    "summary": "加瀬山の上にある、入園無料の動物公園"
+  },
+  {
+    "id": "hakoneen",
+    "name": "箱根園（箱根園水族館）",
+    "genre": "animal",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2122439,
+    "lng": 139.0093068,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 1,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 2,
+      "family": 2,
+      "art": 0,
+      "animal": 2,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "芦ノ湖湖畔の東側にある、コテージ・植物園・水族館・ショッピングモールなどの複合リゾート施設",
+      "箱根における西武グループの開発拠点",
+      "芦ノ湖湖畔から富士山を展望できる"
+    ],
+    "summary": "水族館などがそろう、芦ノ湖畔の複合リゾート"
+  },
+  {
+    "id": "fureaikagakukan",
+    "name": "相模川ふれあい科学館 アクアリウムさがみはら",
+    "genre": "animal",
+    "area": "相模原市中央区",
+    "region": "kenoh",
+    "lat": 35.5474136,
+    "lng": 139.3288881,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 1,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 3,
+      "art": 1,
+      "animal": 3,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "相模川の魚を飼育・展示する相模原市立の科学館",
+      "愛称は「アクアリウムさがみはら」",
+      "「かながわの博物館50選」「かながわの建築物100選」に選ばれている"
+    ],
+    "summary": "相模川の魚を飼育・展示する科学館"
+  },
+  {
+    "id": "kawasui",
+    "name": "カワスイ 川崎水族館",
+    "genre": "animal",
+    "area": "川崎市川崎区",
+    "region": "kawasaki",
+    "lat": 35.5292942,
+    "lng": 139.6968358,
+    "budget": 3,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 3,
+      "family": 2,
+      "art": 1,
+      "animal": 3,
+      "flower": 0,
+      "night": 1
+    },
+    "facts": [
+      "川崎ルフロンの9〜10階にある、川崎市初の水族館",
+      "2020年7月17日に開館した",
+      "「世界の美しい水辺」をテーマに、淡水域の生き物を中心に展示している",
+      "昼と夜とで照明や音響が変化する展示方法をとっている"
+    ],
+    "summary": "駅前のビルにある、世界の水辺がテーマの水族館"
+  },
+  {
+    "id": "kannonzakimuseum",
+    "name": "観音崎自然博物館",
+    "genre": "animal",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.251788,
+    "lng": 139.742333,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 2,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 2,
+      "family": 3,
+      "art": 1,
+      "animal": 2,
+      "flower": 0,
+      "night": 0
+    },
+    "facts": [
+      "東京湾集水域と三浦半島の自然をテーマにした博物館",
+      "観音崎公園内にある",
+      "1953年に創立された",
+      "タッチプールでウニやヒトデなど海の生物に触れることができる"
+    ],
+    "summary": "東京湾と三浦半島の自然がテーマの博物館"
+  },
+  {
+    "id": "asamizo",
+    "name": "相模原麻溝公園",
+    "genre": "animal",
+    "area": "相模原市南区",
+    "region": "kenoh",
+    "lat": 35.5267304,
+    "lng": 139.3919896,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 3,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 2,
+      "flower": 2,
+      "night": 0
+    },
+    "facts": [
+      "相模原市南区にある都市公園で、1985年に開園した",
+      "無料の動物園（ふれあい動物広場）とアスレチックがある",
+      "展望台「グリーンタワー相模原」や大花壇がある",
+      "1992年に全国都市緑化フェアが開催された"
+    ],
+    "summary": "無料の動物広場とアスレチックがある相模原の公園"
+  },
+  {
+    "id": "sankeien",
+    "name": "三溪園",
+    "genre": "flower",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.41714,
+    "lng": 139.6593804,
+    "budget": 2,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 1,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "17.5haの敷地に17棟の日本建築が配置された庭園",
+      "実業家で茶人の原富太郎（号は三溪）によって1906年に造園された",
+      "国の名勝に指定されている"
+    ],
+    "summary": "17棟の日本建築が配置された、本牧の庭園"
+  },
+  {
+    "id": "kurihama",
+    "name": "くりはま花の国",
+    "genre": "flower",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.221174,
+    "lng": 139.7018783,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 1,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 3,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "横須賀市立の都市公園で、色とりどりの花が咲く庭園やスポーツ施設がある",
+      "入園は無料",
+      "在日アメリカ軍の倉庫があった土地を整備した",
+      "園内は広く高低差があり、移動用の「フラワーバス」がある"
+    ],
+    "summary": "入園無料の、色とりどりの花が咲く公園"
+  },
+  {
+    "id": "azumayama",
+    "name": "吾妻山公園",
+    "genre": "flower",
+    "area": "中郡二宮町",
+    "region": "shonan",
+    "lat": 35.2990539,
+    "lng": 139.2502139,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 2,
+      "sea": 2,
+      "food": 0,
+      "active": 2,
+      "relax": 1,
+      "indoor": 0,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "二宮町にある標高136.2mの山で、吾妻山公園とも呼ばれる",
+      "毎年1月下旬から2月上旬には、山頂付近で菜の花が満開になる",
+      "晴れた日には山頂から富士山や丹沢、大山なども望める",
+      "中腹には弟橘媛を祀る吾妻神社がある"
+    ],
+    "summary": "冬に菜の花が咲く、二宮の山頂公園"
+  },
+  {
+    "id": "ofunaflower",
+    "name": "神奈川県立大船フラワーセンター",
+    "genre": "flower",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3480618,
+    "lng": 139.5209316,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 1,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "鎌倉市岡本にある植物園",
+      "1967年に神奈川県農業試験場の跡地に開設された",
+      "玉縄桜やシャクヤク・ハナショウブを中心に、国内外の観賞植物が集められている"
+    ],
+    "summary": "玉縄桜やシャクヤクで知られる鎌倉の植物園"
+  },
+  {
+    "id": "odawaraflower",
+    "name": "小田原フラワーガーデン",
+    "genre": "flower",
+    "area": "小田原市",
+    "region": "seisho",
+    "lat": 35.2806453,
+    "lng": 139.1289508,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 2,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "四季を通じて花が楽しめる植物公園として、1995年に小田原市が整備した",
+      "熱帯植物が鑑賞できる温室（トロピカルドーム）がある",
+      "梅、桜、バラ、ハナショウブなどが植栽されている"
+    ],
+    "summary": "梅林と熱帯植物の温室がある植物公園"
+  },
+  {
+    "id": "sogabairin",
+    "name": "曽我梅林",
+    "genre": "flower",
+    "area": "小田原市",
+    "region": "seisho",
+    "lat": 35.2995446,
+    "lng": 139.1930641,
+    "budget": 1,
+    "tags": {
+      "history": 1,
+      "nature": 2,
+      "sea": 0,
+      "food": 1,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "食用の梅の産地で、観梅の名所",
+      "下曽我駅周辺に広がる3つの梅林の総称で、白梅を中心に約35,000本が栽培されている",
+      "関東三大梅林に数えられることもある"
+    ],
+    "summary": "約35,000本の梅が咲く、関東有数の梅林"
+  },
+  {
+    "id": "shisseikaen",
+    "name": "箱根湿生花園",
+    "genre": "flower",
+    "area": "足柄下郡箱根町",
+    "region": "hakone",
+    "lat": 35.2659563,
+    "lng": 139.0072245,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 3,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 1,
+      "family": 1,
+      "art": 1,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "箱根町仙石原にある植物園",
+      "日本で初めての湿生植物園",
+      "売店や喫茶、展示室も付帯している"
+    ],
+    "summary": "日本で初めての、仙石原の湿生植物園"
+  },
+  {
+    "id": "meigetsuin",
+    "name": "明月院",
+    "genre": "flower",
+    "area": "鎌倉市",
+    "region": "kamakura",
+    "lat": 35.3349131,
+    "lng": 139.5516437,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 0,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "臨済宗建長寺派の寺院",
+      "紫陽花の名所で、青いアジサイが咲く「あじさい寺」として知られる",
+      "平安時代後期に創建された明月庵が始まり",
+      "伝・北条時頼の墓所が境内にある"
+    ],
+    "summary": "青いアジサイで知られる北鎌倉のあじさい寺"
+  },
+  {
+    "id": "kanagarden",
+    "name": "花菜ガーデン",
+    "genre": "flower",
+    "area": "平塚市",
+    "region": "shonan",
+    "lat": 35.3588089,
+    "lng": 139.3124824,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 0,
+      "food": 1,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "平塚市にある神奈川県立の植物園で、正式名称は神奈川県立花と緑のふれあいセンター",
+      "2010年3月1日にオープンした",
+      "5月初旬に満開になるバラ園が有名で、約1,300品種が植えられている",
+      "作家カレル・チャペックの家と庭園をイメージした展示がある"
+    ],
+    "summary": "約1,300品種のバラが咲く、平塚の植物園"
+  },
+  {
+    "id": "ikutarose",
+    "name": "生田緑地ばら苑",
+    "genre": "flower",
+    "area": "川崎市多摩区",
+    "region": "kawasaki",
+    "lat": 35.6080493,
+    "lng": 139.5689611,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 2,
+      "sea": 0,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 3,
+      "night": 0
+    },
+    "facts": [
+      "生田緑地にあるバラ園で、旧向ヶ丘遊園ばら苑",
+      "533種類約4,700株のバラが手入れされている",
+      "春・秋の一定期間に一般公開される",
+      "苑内のバラはボランティアによって手入れされている"
+    ],
+    "summary": "春と秋だけ公開される、生田緑地のバラ園"
+  },
+  {
+    "id": "landmark",
+    "name": "横浜ランドマークタワー",
+    "genre": "city",
+    "area": "横浜市西区",
+    "region": "yokohama",
+    "lat": 35.454598,
+    "lng": 139.6314519,
+    "budget": 2,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 1,
+      "food": 2,
+      "active": 0,
+      "relax": 1,
+      "indoor": 2,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 3
+    },
+    "facts": [
+      "地上70階・高さ296.33mの超高層複合ビル",
+      "1993年7月16日に開業した",
+      "2014年まで日本一高いビルだった"
+    ],
+    "summary": "高さ296mの、みなとみらいの超高層ビル"
+  },
+  {
+    "id": "yamashitapark",
+    "name": "山下公園",
+    "genre": "city",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.4457103,
+    "lng": 139.6499494,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 1,
+      "sea": 3,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 1,
+      "night": 2
+    },
+    "facts": [
+      "横浜港に面して約750mにわたって設けられた公園",
+      "関東大震災で発生した瓦礫を埋め立てて、1930年に開園した",
+      "面積は7.4ha"
+    ],
+    "summary": "横浜港に面して約750m続く、海辺の公園"
+  },
+  {
+    "id": "minatonomieruoka",
+    "name": "港の見える丘公園",
+    "genre": "city",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.4401741,
+    "lng": 139.6547043,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 1,
+      "sea": 2,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 2,
+      "night": 2
+    },
+    "facts": [
+      "横浜港を見下ろす南北に細長い公園",
+      "1962年に開園した",
+      "名称は戦後の流行歌『港が見える丘』に由来する"
+    ],
+    "summary": "横浜港を見下ろす、山手の高台の公園"
+  },
+  {
+    "id": "osanbashi",
+    "name": "横浜港大さん橋国際客船ターミナル",
+    "genre": "city",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.4516667,
+    "lng": 139.6477778,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 0,
+      "sea": 3,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 1,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 3
+    },
+    "facts": [
+      "横浜港における国内・外国航路の客船の主要発着埠頭",
+      "1894年に完成した鉄桟橋が前身",
+      "横浜港の象徴的存在で、主要観光地としても知られる",
+      "現在の施設は2002年に完成した"
+    ],
+    "summary": "客船が発着する、横浜港の象徴的な埠頭"
+  },
+  {
+    "id": "marinetower",
+    "name": "横浜マリンタワー",
+    "genre": "city",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.4439285,
+    "lng": 139.6509018,
+    "budget": 2,
+    "tags": {
+      "history": 1,
+      "nature": 0,
+      "sea": 2,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 2,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 3
+    },
+    "facts": [
+      "横浜港開港100周年記念事業の一つとして建設され、1961年に開業した",
+      "高さは106m",
+      "かつては灯台としても機能していた",
+      "2022年9月に2度目のリニューアルオープンを迎えた"
+    ],
+    "summary": "横浜のシンボル、高さ106mのタワー"
+  },
+  {
+    "id": "nipponmaru",
+    "name": "日本丸メモリアルパーク",
+    "genre": "city",
+    "area": "横浜市西区",
+    "region": "yokohama",
+    "lat": 35.45448,
+    "lng": 139.6334463,
+    "budget": 2,
+    "tags": {
+      "history": 2,
+      "nature": 0,
+      "sea": 3,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 1,
+      "family": 2,
+      "art": 2,
+      "animal": 0,
+      "flower": 0,
+      "night": 1
+    },
+    "facts": [
+      "みなとみらい地区で最初に整備された公園",
+      "帆船日本丸と展示ドック、横浜みなと博物館がある",
+      "日本丸と展示ドックは国の重要文化財に指定されている"
+    ],
+    "summary": "帆船日本丸と博物館がある、みなとみらいの公園"
+  },
+  {
+    "id": "shonandaira",
+    "name": "湘南平",
+    "genre": "city",
+    "area": "平塚市・中郡大磯町",
+    "region": "shonan",
+    "lat": 35.3198696,
+    "lng": 139.3087418,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 2,
+      "sea": 2,
+      "food": 0,
+      "active": 1,
+      "relax": 1,
+      "indoor": 0,
+      "family": 2,
+      "art": 0,
+      "animal": 0,
+      "flower": 2,
+      "night": 3
+    },
+    "facts": [
+      "平塚市と大磯町の境にある標高約180mの泡垂山の山頂一帯",
+      "2つの展望台から相模湾や富士山、江の島などを望める",
+      "日没後は夜景を楽しむこともでき、「夜景100選」に選ばれている",
+      "桜の木も多く、花見の季節は家族連れで賑わう"
+    ],
+    "summary": "相模湾と富士山、夜景を望む展望台の丘"
+  },
+  {
+    "id": "verny",
+    "name": "ヴェルニー・小栗公園（旧 ヴェルニー公園）",
+    "genre": "city",
+    "area": "横須賀市",
+    "region": "miura",
+    "lat": 35.2834283,
+    "lng": 139.6589781,
+    "budget": 1,
+    "tags": {
+      "history": 2,
+      "nature": 0,
+      "sea": 3,
+      "food": 0,
+      "active": 1,
+      "relax": 2,
+      "indoor": 0,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 2,
+      "night": 2
+    },
+    "facts": [
+      "横須賀市汐入町にある市立公園で、2026年11月14日に正式名称を「ヴェルニー・小栗公園」に変更した",
+      "名称は日本の近代化を支援したフランス人技術者レオンス・ヴェルニーに由来する",
+      "フランス式庭園（バラ園）に約2000本のバラが植栽されている",
+      "横須賀港に停泊する艦船を間近に見ることができる"
+    ],
+    "summary": "約2000本のバラが咲く、横須賀港に面した公園"
+  },
+  {
+    "id": "marien",
+    "name": "川崎マリエン",
+    "genre": "city",
+    "area": "川崎市川崎区",
+    "region": "kawasaki",
+    "lat": 35.497351,
+    "lng": 139.7626762,
+    "budget": 1,
+    "tags": {
+      "history": 0,
+      "nature": 0,
+      "sea": 2,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 2,
+      "family": 1,
+      "art": 0,
+      "animal": 0,
+      "flower": 0,
+      "night": 3
+    },
+    "facts": [
+      "川崎市川崎区東扇島にある川崎市港湾振興会館の愛称",
+      "地上50mにある展望室は入場無料",
+      "2014年に日本夜景遺産の認定を受けた",
+      "世界最大級とされるホオジロザメの剥製が展示されている"
+    ],
+    "summary": "工場と港の夜景が見られる、無料の展望室"
+  },
+  {
+    "id": "gaikoukan",
+    "name": "外交官の家",
+    "genre": "city",
+    "area": "横浜市中区",
+    "region": "yokohama",
+    "lat": 35.436634,
+    "lng": 139.6432579,
+    "budget": 1,
+    "tags": {
+      "history": 3,
+      "nature": 0,
+      "sea": 0,
+      "food": 0,
+      "active": 0,
+      "relax": 1,
+      "indoor": 2,
+      "family": 1,
+      "art": 1,
+      "animal": 0,
+      "flower": 1,
+      "night": 0
+    },
+    "facts": [
+      "1910年に建築された塔屋付き木造2階建ての西洋館",
+      "明治・大正時代の外交官・内田定槌の住宅として東京都渋谷区に建てられ、横浜市山手町に移築された",
+      "「旧内田家住宅」の名称で国の重要文化財に指定されている"
+    ],
+    "summary": "明治の外交官が暮らした、山手の西洋館"
   }
 ]

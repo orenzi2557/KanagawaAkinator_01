@@ -47,3 +47,22 @@ export function NearbyCard({ index, spot, distanceKm }) {
     </div>
   );
 }
+
+/** おすすめエリアのスポットカード */
+export function AreaSpotCard({ spot, percent, reasons }) {
+  return (
+    <div className="rounded-xl border border-line bg-surface p-4">
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="font-bold">{spot.name}</span>
+        <span className="shrink-0 text-sm text-primary-strong">{percent}%</span>
+      </div>
+      <p className="mt-1 text-sm text-muted">
+        {GENRE_LABELS[spot.genre]}・{spot.area}
+      </p>
+      <p className="mt-1 text-sm text-muted">{spot.summary}</p>
+      <div className="mt-2">
+        <TagBadges tags={reasons} />
+      </div>
+    </div>
+  );
+}

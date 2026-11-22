@@ -60,9 +60,9 @@ describe("実データでの近くのスポット", async () => {
     expect(first.distanceKm).toBeLessThan(1);
   });
 
-  it("横浜赤レンガ倉庫の近く 2 件はカップヌードルミュージアムと中華街", () => {
+  it("横浜赤レンガ倉庫の近く 2 件は大さん橋とカップヌードルミュージアム", () => {
     const ids = findNearby(byId.get("akarenga"), spots).map((n) => n.spot.id);
-    expect(ids.sort()).toEqual(["chinatown", "cupnoodle"]);
+    expect(ids.sort()).toEqual(["cupnoodle", "osanbashi"]);
   });
 
   it("どのスポットでも自分以外の 2 件が返る", () => {
