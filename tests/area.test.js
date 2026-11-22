@@ -31,10 +31,13 @@ describe("おすすめエリア", () => {
     expect(recommendArea({ id: "x" }, ranked)).toBeNull();
   });
 
-  it("結果画面のデータに、近くのスポットと重ならないおすすめエリアが入る", () => {
+  it("結果画面のデータに、近くのスポット・ほかの候補と重ならないおすすめエリアが入る", () => {
     const result = buildResult(spots, questions, []);
     expect(result.area.region).toBe(result.main.spot.region);
-    const nearbyIds = result.nearby.map((n) => n.spot.id);
+    const nearbyIds = [
+      ...result.nearby.map((n) => n.spot.id),
+      ...result.others.map((c) => c.spot.id),
+    ];
     for (const a of result.area.spots) {
       expect(a.spot.region).toBe(result.main.spot.region);
       expect(nearbyIds).not.toContain(a.spot.id);
